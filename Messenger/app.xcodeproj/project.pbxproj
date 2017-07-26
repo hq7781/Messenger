@@ -443,6 +443,446 @@
 		29D29EF91D9A59E4006CA074 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D29EF81D9A59E4006CA074 /* AppDelegate.m */; };
 		29D29F011D9A59E4006CA074 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29D29F001D9A59E4006CA074 /* Assets.xcassets */; };
 		29D29F041D9A59E4006CA074 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29D29F021D9A59E4006CA074 /* LaunchScreen.storyboard */; };
+		868012151F209F45000A2302 /* NSDate+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991771F1B700200AC73B3 /* NSDate+Util.m */; };
+		868012161F209F45000A2302 /* AdvertPremiumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991431F1B700200AC73B3 /* AdvertPremiumView.m */; };
+		868012171F209F45000A2302 /* ChatsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990D71F1B700200AC73B3 /* ChatsView.m */; };
+		868012181F209F45000A2302 /* Shortcut.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991931F1B700200AC73B3 /* Shortcut.m */; };
+		868012191F209F45000A2302 /* CallsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990DB1F1B700200AC73B3 /* CallsView.m */; };
+		8680121A1F209F45000A2302 /* SINSLazyAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 291593D21E55E75400CC0E12 /* SINSLazyAudioController.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		8680121B1F209F45000A2302 /* advert.m in Sources */ = {isa = PBXBuildFile; fileRef = 2989913E1F1B700200AC73B3 /* advert.m */; };
+		8680121C1F209F45000A2302 /* CallHistories.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991521F1B700200AC73B3 /* CallHistories.m */; };
+		8680121D1F209F45000A2302 /* SINSLazyMessageClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 291593D61E55E75400CC0E12 /* SINSLazyMessageClient.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		8680121E1F209F45000A2302 /* RegisterEmailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991DB1F1B700200AC73B3 /* RegisterEmailView.m */; };
+		8680121F1F209F45000A2302 /* NSDictionary+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991791F1B700200AC73B3 /* NSDictionary+Util.m */; };
+		868012201F209F45000A2302 /* DBContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991BC1F1B700200AC73B3 /* DBContact.m */; };
+		868012211F209F45000A2302 /* GroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990801F1B700200AC73B3 /* GroupView.m */; };
+		868012221F209F45000A2302 /* File.m in Sources */ = {isa = PBXBuildFile; fileRef = 2989918D1F1B700200AC73B3 /* File.m */; };
+		868012231F209F45000A2302 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991691F1B700200AC73B3 /* Group.m */; };
+		868012241F209F45000A2302 /* StatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990FE1F1B700200AC73B3 /* StatusView.m */; };
+		868012251F209F45000A2302 /* DBMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991C01F1B700200AC73B3 /* DBMessage.m */; };
+		868012261F209F45000A2302 /* ChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990761F1B700200AC73B3 /* ChatView.m */; };
+		868012271F209F45000A2302 /* ProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2989907C1F1B700200AC73B3 /* ProfileView.m */; };
+		868012281F209F45000A2302 /* Statuses.m in Sources */ = {isa = PBXBuildFile; fileRef = 2989915A1F1B700200AC73B3 /* Statuses.m */; };
+		868012291F209F45000A2302 /* Cryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991871F1B700200AC73B3 /* Cryptor.m */; };
+		8680122A1F209F45000A2302 /* GroupsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990ED1F1B700200AC73B3 /* GroupsView.m */; };
+		8680122B1F209F45000A2302 /* SelectMultipleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990B71F1B700200AC73B3 /* SelectMultipleView.m */; };
+		8680122C1F209F45000A2302 /* MediaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2989911C1F1B700200AC73B3 /* MediaView.m */; };
+		8680122D1F209F45000A2302 /* FUser+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991491F1B700200AC73B3 /* FUser+Util.m */; };
+		8680122E1F209F45000A2302 /* LoginPhoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991D71F1B700200AC73B3 /* LoginPhoneView.m */; };
+		8680122F1F209F45000A2302 /* SINSLazyProxyBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 291593D81E55E75400CC0E12 /* SINSLazyProxyBase.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		868012301F209F45000A2302 /* ArchiveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2989910C1F1B700200AC73B3 /* ArchiveView.m */; };
+		868012311F209F45000A2302 /* Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 2989918B1F1B700200AC73B3 /* Emoji.m */; };
+		868012321F209F45000A2302 /* SelectSingleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990BE1F1B700200AC73B3 /* SelectSingleView.m */; };
+		868012331F209F45000A2302 /* Blocked.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991631F1B700200AC73B3 /* Blocked.m */; };
+		868012341F209F45000A2302 /* AlbumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2989919F1F1B700200AC73B3 /* AlbumManager.m */; };
+		868012351F209F45000A2302 /* CallHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991651F1B700200AC73B3 /* CallHistory.m */; };
+		868012361F209F45000A2302 /* DBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991C41F1B700200AC73B3 /* DBUser.m */; };
+		868012371F209F45000A2302 /* StickersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990CF1F1B700200AC73B3 /* StickersView.m */; };
+		868012381F209F45000A2302 /* FObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991471F1B700200AC73B3 /* FObject.m */; };
+		868012391F209F45000A2302 /* Users.m in Sources */ = {isa = PBXBuildFile; fileRef = 2989915C1F1B700200AC73B3 /* Users.m */; };
+		8680123A1F209F45000A2302 /* LoginEmailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991CB1F1B700200AC73B3 /* LoginEmailView.m */; };
+		8680123B1F209F45000A2302 /* AllMediaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990871F1B700200AC73B3 /* AllMediaView.m */; };
+		8680123C1F209F45000A2302 /* KeepMediaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991111F1B700200AC73B3 /* KeepMediaView.m */; };
+		8680123D1F209F45000A2302 /* DBChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991BA1F1B700200AC73B3 /* DBChat.m */; };
+		8680123E1F209F45000A2302 /* DBCallHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991B81F1B700200AC73B3 /* DBCallHistory.m */; };
+		8680123F1F209F45000A2302 /* Groups.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991561F1B700200AC73B3 /* Groups.m */; };
+		868012401F209F45000A2302 /* SwitchAccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991331F1B700200AC73B3 /* SwitchAccountCell.m */; };
+		868012411F209F45000A2302 /* CustomStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990FB1F1B700200AC73B3 /* CustomStatusView.m */; };
+		868012421F209F45000A2302 /* PeopleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990DF1F1B700200AC73B3 /* PeopleCell.m */; };
+		868012431F209F45000A2302 /* WelcomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991DE1F1B700200AC73B3 /* WelcomeView.m */; };
+		868012441F209F45000A2302 /* DBStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991C21F1B700200AC73B3 /* DBStatus.m */; };
+		868012451F209F45000A2302 /* WallpapersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991231F1B700200AC73B3 /* WallpapersView.m */; };
+		868012461F209F45000A2302 /* BlockedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991021F1B700200AC73B3 /* BlockedCell.m */; };
+		868012471F209F45000A2302 /* MessageSend1.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991AE1F1B700200AC73B3 /* MessageSend1.m */; };
+		868012481F209F45000A2302 /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990921F1B700200AC73B3 /* MapView.m */; };
+		868012491F209F45000A2302 /* EditProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990F21F1B700200AC73B3 /* EditProfileView.m */; };
+		8680124A1F209F45000A2302 /* MessagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990781F1B700200AC73B3 /* MessagesView.m */; };
+		8680124B1F209F45000A2302 /* PasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990F61F1B700200AC73B3 /* PasswordView.m */; };
+		8680124C1F209F45000A2302 /* Status.m in Sources */ = {isa = PBXBuildFile; fileRef = 2989916D1F1B700200AC73B3 /* Status.m */; };
+		8680124D1F209F45000A2302 /* NSError+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 2989914D1F1B700200AC73B3 /* NSError+Util.m */; };
+		8680124E1F209F45000A2302 /* SinchService.m in Sources */ = {isa = PBXBuildFile; fileRef = 291593CA1E55E75400CC0E12 /* SinchService.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		8680124F1F209F45000A2302 /* SelectGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990A91F1B700200AC73B3 /* SelectGroupView.m */; };
+		868012501F209F45000A2302 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2989917E1F1B700200AC73B3 /* Connection.m */; };
+		868012511F209F45000A2302 /* SINSLazyCallClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 291593D41E55E75400CC0E12 /* SINSLazyCallClient.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		868012521F209F45000A2302 /* SINService.m in Sources */ = {isa = PBXBuildFile; fileRef = 291593CE1E55E75400CC0E12 /* SINService.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		868012531F209F45000A2302 /* Audio.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991831F1B700200AC73B3 /* Audio.m */; };
+		868012541F209F45000A2302 /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991A11F1B700200AC73B3 /* CacheManager.m */; };
+		868012551F209F45000A2302 /* SINSClientsObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 291593CC1E55E75400CC0E12 /* SINSClientsObserver.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		868012561F209F45000A2302 /* SelectGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990A61F1B700200AC73B3 /* SelectGroupCell.m */; };
+		868012571F209F45000A2302 /* MessageSend2.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991B01F1B700200AC73B3 /* MessageSend2.m */; };
+		868012581F209F45000A2302 /* AllMediaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990841F1B700200AC73B3 /* AllMediaCell.m */; };
+		868012591F209F45000A2302 /* push.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991701F1B700200AC73B3 /* push.m */; };
+		8680125A1F209F45000A2302 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D29EF81D9A59E4006CA074 /* AppDelegate.m */; };
+		8680125B1F209F45000A2302 /* SwitchAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991361F1B700200AC73B3 /* SwitchAccountView.m */; };
+		8680125C1F209F45000A2302 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990971F1B700200AC73B3 /* NavigationController.m */; };
+		8680125D1F209F45000A2302 /* AddAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2989912F1F1B700200AC73B3 /* AddAccountView.m */; };
+		8680125E1F209F45000A2302 /* Blockeds.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991501F1B700200AC73B3 /* Blockeds.m */; };
+		8680125F1F209F45000A2302 /* UserStatuses.m in Sources */ = {isa = PBXBuildFile; fileRef = 2989915E1F1B700200AC73B3 /* UserStatuses.m */; };
+		868012601F209F45000A2302 /* GroupsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990EA1F1B700200AC73B3 /* GroupsCell.m */; };
+		868012611F209F45000A2302 /* FUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2989914B1F1B700200AC73B3 /* FUser.m */; };
+		868012621F209F45000A2302 /* DBGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991BE1F1B700200AC73B3 /* DBGroup.m */; };
+		868012631F209F45000A2302 /* StickersCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990CC1F1B700200AC73B3 /* StickersCell.m */; };
+		868012641F209F45000A2302 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D29EF51D9A59E4006CA074 /* main.m */; };
+		868012651F209F45000A2302 /* ChatsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990D41F1B700200AC73B3 /* ChatsCell.m */; };
+		868012661F209F45000A2302 /* ArchiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991091F1B700200AC73B3 /* ArchiveCell.m */; };
+		868012671F209F45000A2302 /* UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 2989917B1F1B700200AC73B3 /* UserDefaults.m */; };
+		868012681F209F45000A2302 /* NYTPhotoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991B31F1B700200AC73B3 /* NYTPhotoItem.m */; };
+		868012691F209F45000A2302 /* VideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2989908E1F1B700200AC73B3 /* VideoView.m */; };
+		8680126A1F209F45000A2302 /* SelectMemberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990AD1F1B700200AC73B3 /* SelectMemberCell.m */; };
+		8680126B1F209F45000A2302 /* SINServiceError.m in Sources */ = {isa = PBXBuildFile; fileRef = 291593D01E55E75400CC0E12 /* SINServiceError.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		8680126C1F209F45000A2302 /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 2989918F1F1B700200AC73B3 /* Image.m */; };
+		8680126D1F209F45000A2302 /* CallVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2989909E1F1B700200AC73B3 /* CallVideoView.m */; };
+		8680126E1F209F45000A2302 /* VerifySMSView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991D41F1B700200AC73B3 /* VerifySMSView.m */; };
+		8680126F1F209F45000A2302 /* DBUserStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991C61F1B700200AC73B3 /* DBUserStatus.m */; };
+		868012701F209F45000A2302 /* CreateGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990E71F1B700200AC73B3 /* CreateGroupView.m */; };
+		868012711F209F45000A2302 /* Dir.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991891F1B700200AC73B3 /* Dir.m */; };
+		868012721F209F45000A2302 /* AdvertCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991401F1B700200AC73B3 /* AdvertCustomView.m */; };
+		868012731F209F45000A2302 /* PeopleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990E21F1B700200AC73B3 /* PeopleView.m */; };
+		868012741F209F45000A2302 /* WallpapersCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991201F1B700200AC73B3 /* WallpapersCell.m */; };
+		868012751F209F45000A2302 /* NotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991751F1B700200AC73B3 /* NotificationCenter.m */; };
+		868012761F209F45000A2302 /* SelectUsersCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990C51F1B700200AC73B3 /* SelectUsersCell2.m */; };
+		868012771F209F45000A2302 /* converter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2989919C1F1B700200AC73B3 /* converter.m */; };
+		868012781F209F45000A2302 /* CallAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2989909A1F1B700200AC73B3 /* CallAudioView.m */; };
+		868012791F209F45000A2302 /* PictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2989908B1F1B700200AC73B3 /* PictureView.m */; };
+		8680127A1F209F45000A2302 /* MessageForward.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991AA1F1B700200AC73B3 /* MessageForward.m */; };
+		8680127B1F209F45000A2302 /* NetworkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991191F1B700200AC73B3 /* NetworkView.m */; };
+		8680127C1F209F45000A2302 /* Password.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991911F1B700200AC73B3 /* Password.m */; };
+		8680127D1F209F45000A2302 /* camera.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991981F1B700200AC73B3 /* camera.m */; };
+		8680127E1F209F45000A2302 /* SelectMemberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990B01F1B700200AC73B3 /* SelectMemberView.m */; };
+		8680127F1F209F45000A2302 /* LoginGoogleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991CF1F1B700200AC73B3 /* LoginGoogleView.m */; };
+		868012801F209F45000A2302 /* BlockedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991051F1B700200AC73B3 /* BlockedView.m */; };
+		868012811F209F45000A2302 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991611F1B700200AC73B3 /* Account.m */; };
+		868012821F209F45000A2302 /* PrivacyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991271F1B700200AC73B3 /* PrivacyView.m */; };
+		868012831F209F45000A2302 /* Contacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991541F1B700200AC73B3 /* Contacts.m */; };
+		868012841F209F45000A2302 /* SelectMultipleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990B41F1B700200AC73B3 /* SelectMultipleCell.m */; };
+		868012851F209F45000A2302 /* Messages.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991581F1B700200AC73B3 /* Messages.m */; };
+		868012861F209F45000A2302 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991801F1B700200AC73B3 /* Location.m */; };
+		868012871F209F45000A2302 /* SelectUsersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990C81F1B700200AC73B3 /* SelectUsersView.m */; };
+		868012881F209F45000A2302 /* Chat.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991671F1B700200AC73B3 /* Chat.m */; };
+		868012891F209F45000A2302 /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991951F1B700200AC73B3 /* Video.m */; };
+		8680128A1F209F45000A2302 /* Checksum.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991851F1B700200AC73B3 /* Checksum.m */; };
+		8680128B1F209F45000A2302 /* TermsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2989912B1F1B700200AC73B3 /* TermsView.m */; };
+		8680128C1F209F45000A2302 /* CacheView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991141F1B700200AC73B3 /* CacheView.m */; };
+		8680128D1F209F45000A2302 /* SettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991391F1B700200AC73B3 /* SettingsView.m */; };
+		8680128E1F209F45000A2302 /* MessageQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991AC1F1B700200AC73B3 /* MessageQueue.m */; };
+		8680128F1F209F45000A2302 /* user.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991721F1B700200AC73B3 /* user.m */; };
+		868012901F209F45000A2302 /* MediaLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991A51F1B700200AC73B3 /* MediaLoader.m */; };
+		868012911F209F45000A2302 /* SelectSingleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990BB1F1B700200AC73B3 /* SelectSingleCell.m */; };
+		868012921F209F45000A2302 /* CountriesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990A21F1B700200AC73B3 /* CountriesView.m */; };
+		868012931F209F45000A2302 /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991A31F1B700200AC73B3 /* DownloadManager.m */; };
+		868012941F209F45000A2302 /* RealmManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991A71F1B700200AC73B3 /* RealmManager.m */; };
+		868012951F209F45000A2302 /* common.m in Sources */ = {isa = PBXBuildFile; fileRef = 2989919A1F1B700200AC73B3 /* common.m */; };
+		868012961F209F45000A2302 /* DBBlocked.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991B61F1B700200AC73B3 /* DBBlocked.m */; };
+		868012971F209F45000A2302 /* SelectUsersCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990C21F1B700200AC73B3 /* SelectUsersCell1.m */; };
+		868012981F209F45000A2302 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 2989916B1F1B700200AC73B3 /* Message.m */; };
+		868012991F209F45000A2302 /* SINSServicePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 291593DB1E55E75400CC0E12 /* SINSServicePersistence.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		8680129B1F209F45000A2302 /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 297DBA0A1DCB5F13008551F2 /* PushKit.framework */; };
+		8680129C1F209F45000A2302 /* libPods-app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF0EF40EF90293E7039F76D /* libPods-app.a */; };
+		8680129E1F209F45000A2302 /* stickerlocal59@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F121F1B6FFC00AC73B3 /* stickerlocal59@2x.png */; };
+		8680129F1F209F45000A2302 /* advert08@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E781F1B6FFC00AC73B3 /* advert08@2x.png */; };
+		868012A01F209F45000A2302 /* register_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EB61F1B6FFC00AC73B3 /* register_logo@2x.png */; };
+		868012A11F209F45000A2302 /* stickerlocal35@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EFA1F1B6FFC00AC73B3 /* stickerlocal35@2x.png */; };
+		868012A21F209F45000A2302 /* AllMediaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990881F1B700200AC73B3 /* AllMediaView.xib */; };
+		868012A31F209F45000A2302 /* stickerlocal64@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F171F1B6FFC00AC73B3 /* stickerlocal64@2x.png */; };
+		868012A41F209F45000A2302 /* stickerlocal24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EEF1F1B6FFC00AC73B3 /* stickerlocal24@2x.png */; };
+		868012A51F209F45000A2302 /* callvideo_switch1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E931F1B6FFC00AC73B3 /* callvideo_switch1@2x.png */; };
+		868012A61F209F45000A2302 /* GroupsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990EB1F1B700200AC73B3 /* GroupsCell.xib */; };
+		868012A71F209F45000A2302 /* login_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EAC1F1B6FFC00AC73B3 /* login_logo@2x.png */; };
+		868012A81F209F45000A2302 /* stickersend45@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F531F1B6FFC00AC73B3 /* stickersend45@2x.png */; };
+		868012A91F209F45000A2302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29D29F021D9A59E4006CA074 /* LaunchScreen.storyboard */; };
+		868012AA1F209F45000A2302 /* stickersend11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F311F1B6FFC00AC73B3 /* stickersend11@2x.png */; };
+		868012AB1F209F45000A2302 /* advert10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E7A1F1B6FFC00AC73B3 /* advert10@2x.png */; };
+		868012AC1F209F45000A2302 /* stickersend17@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F371F1B6FFC00AC73B3 /* stickersend17@2x.png */; };
+		868012AD1F209F45000A2302 /* stickersend27@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F411F1B6FFC00AC73B3 /* stickersend27@2x.png */; };
+		868012AE1F209F45000A2302 /* callaudio_hangup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E861F1B6FFC00AC73B3 /* callaudio_hangup@2x.png */; };
+		868012AF1F209F45000A2302 /* stickersend57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F5F1F1B6FFD00AC73B3 /* stickersend57@2x.png */; };
+		868012B01F209F45000A2302 /* stickersend76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F721F1B6FFD00AC73B3 /* stickersend76@2x.png */; };
+		868012B11F209F45000A2302 /* callvideo_mute1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E911F1B6FFC00AC73B3 /* callvideo_mute1@2x.png */; };
+		868012B21F209F45000A2302 /* stickersend09@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F2F1F1B6FFC00AC73B3 /* stickersend09@2x.png */; };
+		868012B31F209F45000A2302 /* selectgroup_blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EB81F1B6FFC00AC73B3 /* selectgroup_blank@2x.png */; };
+		868012B41F209F45000A2302 /* wallpapers02@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29898F771F1B6FFD00AC73B3 /* wallpapers02@2x.jpg */; };
+		868012B51F209F45000A2302 /* stickerlocal54@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F0D1F1B6FFC00AC73B3 /* stickerlocal54@2x.png */; };
+		868012B61F209F45000A2302 /* tab_groups@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898ECA1F1B6FFC00AC73B3 /* tab_groups@2x.png */; };
+		868012B71F209F45000A2302 /* callaudio_blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E851F1B6FFC00AC73B3 /* callaudio_blank@2x.png */; };
+		868012B81F209F45000A2302 /* WallpapersView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298991241F1B700200AC73B3 /* WallpapersView.xib */; };
+		868012B91F209F45000A2302 /* stickersend40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F4E1F1B6FFC00AC73B3 /* stickersend40@2x.png */; };
+		868012BA1F209F45000A2302 /* stickerlocal17@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EE81F1B6FFC00AC73B3 /* stickerlocal17@2x.png */; };
+		868012BB1F209F45000A2302 /* stickersend51@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F591F1B6FFC00AC73B3 /* stickersend51@2x.png */; };
+		868012BC1F209F45000A2302 /* wallpapers05@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29898F7A1F1B6FFD00AC73B3 /* wallpapers05@2x.jpg */; };
+		868012BD1F209F45000A2302 /* stickersend13@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F331F1B6FFC00AC73B3 /* stickersend13@2x.png */; };
+		868012BE1F209F45000A2302 /* stickerlocal56@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F0F1F1B6FFC00AC73B3 /* stickerlocal56@2x.png */; };
+		868012BF1F209F45000A2302 /* VideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2989908F1F1B700200AC73B3 /* VideoView.xib */; };
+		868012C01F209F45000A2302 /* stickersend59@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F611F1B6FFD00AC73B3 /* stickersend59@2x.png */; };
+		868012C11F209F45000A2302 /* stickerlocal40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EFF1F1B6FFC00AC73B3 /* stickerlocal40@2x.png */; };
+		868012C21F209F45000A2302 /* WelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298991DF1F1B700200AC73B3 /* WelcomeView.xib */; };
+		868012C31F209F45000A2302 /* callvideo_answer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E8E1F1B6FFC00AC73B3 /* callvideo_answer@2x.png */; };
+		868012C41F209F45000A2302 /* stickersend07@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F2D1F1B6FFC00AC73B3 /* stickersend07@2x.png */; };
+		868012C51F209F45000A2302 /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2989913A1F1B700200AC73B3 /* SettingsView.xib */; };
+		868012C61F209F45000A2302 /* blocked_blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E821F1B6FFC00AC73B3 /* blocked_blank@2x.png */; };
+		868012C71F209F45000A2302 /* stickerlocal04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EDB1F1B6FFC00AC73B3 /* stickerlocal04@2x.png */; };
+		868012C81F209F45000A2302 /* stickersend53@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F5B1F1B6FFC00AC73B3 /* stickersend53@2x.png */; };
+		868012C91F209F45000A2302 /* stickersend38@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F4C1F1B6FFC00AC73B3 /* stickersend38@2x.png */; };
+		868012CA1F209F45000A2302 /* advert04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E741F1B6FFC00AC73B3 /* advert04@2x.png */; };
+		868012CB1F209F45000A2302 /* creategroup_blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EA11F1B6FFC00AC73B3 /* creategroup_blank@2x.png */; };
+		868012CC1F209F45000A2302 /* stickerlocal36@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EFB1F1B6FFC00AC73B3 /* stickerlocal36@2x.png */; };
+		868012CD1F209F45000A2302 /* StatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990FF1F1B700200AC73B3 /* StatusView.xib */; };
+		868012CE1F209F45000A2302 /* stickersend72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F6E1F1B6FFD00AC73B3 /* stickersend72@2x.png */; };
+		868012CF1F209F45000A2302 /* ChatsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990D51F1B700200AC73B3 /* ChatsCell.xib */; };
+		868012D01F209F45000A2302 /* PeopleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990E31F1B700200AC73B3 /* PeopleView.xib */; };
+		868012D11F209F45000A2302 /* stickerlocal42@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F011F1B6FFC00AC73B3 /* stickerlocal42@2x.png */; };
+		868012D21F209F45000A2302 /* VerifySMSView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298991D51F1B700200AC73B3 /* VerifySMSView.xib */; };
+		868012D31F209F45000A2302 /* stickerlocal33@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EF81F1B6FFC00AC73B3 /* stickerlocal33@2x.png */; };
+		868012D41F209F45000A2302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29D29F001D9A59E4006CA074 /* Assets.xcassets */; };
+		868012D51F209F45000A2302 /* wallpapers03@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29898F781F1B6FFD00AC73B3 /* wallpapers03@2x.jpg */; };
+		868012D61F209F45000A2302 /* stickerlocal25@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EF01F1B6FFC00AC73B3 /* stickerlocal25@2x.png */; };
+		868012D71F209F45000A2302 /* stickersend66@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F681F1B6FFD00AC73B3 /* stickersend66@2x.png */; };
+		868012D81F209F45000A2302 /* stickerlocal58@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F111F1B6FFC00AC73B3 /* stickerlocal58@2x.png */; };
+		868012D91F209F45000A2302 /* stickerlocal63@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F161F1B6FFC00AC73B3 /* stickerlocal63@2x.png */; };
+		868012DA1F209F45000A2302 /* recent_muted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EB41F1B6FFC00AC73B3 /* recent_muted@2x.png */; };
+		868012DB1F209F45000A2302 /* stickersend34@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F481F1B6FFC00AC73B3 /* stickersend34@2x.png */; };
+		868012DC1F209F45000A2302 /* ArchiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2989910A1F1B700200AC73B3 /* ArchiveCell.xib */; };
+		868012DD1F209F45000A2302 /* stickerlocal12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EE31F1B6FFC00AC73B3 /* stickerlocal12@2x.png */; };
+		868012DE1F209F45000A2302 /* wallpapers06@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29898F7B1F1B6FFD00AC73B3 /* wallpapers06@2x.jpg */; };
+		868012DF1F209F45000A2302 /* stickerlocal52@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F0B1F1B6FFC00AC73B3 /* stickerlocal52@2x.png */; };
+		868012E01F209F45000A2302 /* SwitchAccountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298991341F1B700200AC73B3 /* SwitchAccountCell.xib */; };
+		868012E11F209F45000A2302 /* TermsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2989912C1F1B700200AC73B3 /* TermsView.xib */; };
+		868012E21F209F45000A2302 /* stickerlocal16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EE71F1B6FFC00AC73B3 /* stickerlocal16@2x.png */; };
+		868012E31F209F45000A2302 /* stickersend71@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F6D1F1B6FFD00AC73B3 /* stickersend71@2x.png */; };
+		868012E41F209F45000A2302 /* stickersend08@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F2E1F1B6FFC00AC73B3 /* stickersend08@2x.png */; };
+		868012E51F209F45000A2302 /* chat_video@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E9D1F1B6FFC00AC73B3 /* chat_video@2x.png */; };
+		868012E61F209F45000A2302 /* stickerlocal31@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EF61F1B6FFC00AC73B3 /* stickerlocal31@2x.png */; };
+		868012E71F209F45000A2302 /* wallpapers01@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29898F761F1B6FFD00AC73B3 /* wallpapers01@2x.jpg */; };
+		868012E81F209F45000A2302 /* stickersend12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F321F1B6FFC00AC73B3 /* stickersend12@2x.png */; };
+		868012E91F209F45000A2302 /* stickersend56@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F5E1F1B6FFD00AC73B3 /* stickersend56@2x.png */; };
+		868012EA1F209F45000A2302 /* stickersend58@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F601F1B6FFD00AC73B3 /* stickersend58@2x.png */; };
+		868012EB1F209F45000A2302 /* stickersend35@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F491F1B6FFC00AC73B3 /* stickersend35@2x.png */; };
+		868012EC1F209F45000A2302 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990931F1B700200AC73B3 /* MapView.xib */; };
+		868012ED1F209F45000A2302 /* LoginEmailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298991CC1F1B700200AC73B3 /* LoginEmailView.xib */; };
+		868012EE1F209F45000A2302 /* SelectMultipleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990B81F1B700200AC73B3 /* SelectMultipleView.xib */; };
+		868012EF1F209F45000A2302 /* RegisterEmailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298991DC1F1B700200AC73B3 /* RegisterEmailView.xib */; };
+		868012F01F209F45000A2302 /* stickerlocal14@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EE51F1B6FFC00AC73B3 /* stickerlocal14@2x.png */; };
+		868012F11F209F45000A2302 /* stickersend14@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F341F1B6FFC00AC73B3 /* stickersend14@2x.png */; };
+		868012F21F209F45000A2302 /* stickerlocal06@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EDD1F1B6FFC00AC73B3 /* stickerlocal06@2x.png */; };
+		868012F31F209F45000A2302 /* stickerlocal28@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EF31F1B6FFC00AC73B3 /* stickerlocal28@2x.png */; };
+		868012F41F209F45000A2302 /* chat_location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E9A1F1B6FFC00AC73B3 /* chat_location@2x.png */; };
+		868012F51F209F45000A2302 /* stickersend49@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F571F1B6FFC00AC73B3 /* stickersend49@2x.png */; };
+		868012F61F209F45000A2302 /* advert02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E721F1B6FFC00AC73B3 /* advert02@2x.png */; };
+		868012F71F209F45000A2302 /* stickerlocal34@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EF91F1B6FFC00AC73B3 /* stickerlocal34@2x.png */; };
+		868012F81F209F45000A2302 /* callaudio_answer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E841F1B6FFC00AC73B3 /* callaudio_answer@2x.png */; };
+		868012F91F209F45000A2302 /* selectusers_blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EC01F1B6FFC00AC73B3 /* selectusers_blank@2x.png */; };
+		868012FA1F209F45000A2302 /* SelectGroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990A71F1B700200AC73B3 /* SelectGroupCell.xib */; };
+		868012FB1F209F45000A2302 /* stickersend18@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F381F1B6FFC00AC73B3 /* stickersend18@2x.png */; };
+		868012FC1F209F45000A2302 /* stickersend46@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F541F1B6FFC00AC73B3 /* stickersend46@2x.png */; };
+		868012FD1F209F45000A2302 /* stickersend24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F3E1F1B6FFC00AC73B3 /* stickersend24@2x.png */; };
+		868012FE1F209F45000A2302 /* tab_chats@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EC91F1B6FFC00AC73B3 /* tab_chats@2x.png */; };
+		868012FF1F209F45000A2302 /* selectsingle_blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EBE1F1B6FFC00AC73B3 /* selectsingle_blank@2x.png */; };
+		868013001F209F45000A2302 /* AdvertCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298991411F1B700200AC73B3 /* AdvertCustomView.xib */; };
+		868013011F209F45000A2302 /* AdvertPremiumView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298991441F1B700200AC73B3 /* AdvertPremiumView.xib */; };
+		868013021F209F45000A2302 /* stickersend77@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F731F1B6FFD00AC73B3 /* stickersend77@2x.png */; };
+		868013031F209F45000A2302 /* wallpapers04@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29898F791F1B6FFD00AC73B3 /* wallpapers04@2x.jpg */; };
+		868013041F209F45000A2302 /* stickersend65@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F671F1B6FFD00AC73B3 /* stickersend65@2x.png */; };
+		868013051F209F45000A2302 /* terms.html in Resources */ = {isa = PBXBuildFile; fileRef = 29898F821F1B6FFD00AC73B3 /* terms.html */; };
+		868013061F209F45000A2302 /* stickerlocal37@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EFC1F1B6FFC00AC73B3 /* stickerlocal37@2x.png */; };
+		868013071F209F45000A2302 /* advert06@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E761F1B6FFC00AC73B3 /* advert06@2x.png */; };
+		868013081F209F45000A2302 /* stickersend01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F271F1B6FFC00AC73B3 /* stickersend01@2x.png */; };
+		868013091F209F45000A2302 /* stickersend73@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F6F1F1B6FFD00AC73B3 /* stickersend73@2x.png */; };
+		8680130A1F209F45000A2302 /* stickerlocal03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EDA1F1B6FFC00AC73B3 /* stickerlocal03@2x.png */; };
+		8680130B1F209F45000A2302 /* group_blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EA51F1B6FFC00AC73B3 /* group_blank@2x.png */; };
+		8680130C1F209F45000A2302 /* advert05@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E751F1B6FFC00AC73B3 /* advert05@2x.png */; };
+		8680130D1F209F45000A2302 /* chat_sticker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E9C1F1B6FFC00AC73B3 /* chat_sticker@2x.png */; };
+		8680130E1F209F45000A2302 /* SelectGroupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990AA1F1B700200AC73B3 /* SelectGroupView.xib */; };
+		8680130F1F209F45000A2302 /* stickersend47@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F551F1B6FFC00AC73B3 /* stickersend47@2x.png */; };
+		868013101F209F45000A2302 /* stickersend41@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F4F1F1B6FFC00AC73B3 /* stickersend41@2x.png */; };
+		868013111F209F45000A2302 /* stickerlocal23@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EEE1F1B6FFC00AC73B3 /* stickerlocal23@2x.png */; };
+		868013121F209F45000A2302 /* CallsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990DC1F1B700200AC73B3 /* CallsView.xib */; };
+		868013131F209F45000A2302 /* stickersend75@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F711F1B6FFD00AC73B3 /* stickersend75@2x.png */; };
+		868013141F209F45000A2302 /* EditProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990F31F1B700200AC73B3 /* EditProfileView.xib */; };
+		868013151F209F45000A2302 /* stickersend67@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F691F1B6FFD00AC73B3 /* stickersend67@2x.png */; };
+		868013161F209F45000A2302 /* stickersend03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F291F1B6FFC00AC73B3 /* stickersend03@2x.png */; };
+		868013171F209F45000A2302 /* allmedia_blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E7D1F1B6FFC00AC73B3 /* allmedia_blank@2x.png */; };
+		868013181F209F45000A2302 /* chat_callaudio@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E971F1B6FFC00AC73B3 /* chat_callaudio@2x.png */; };
+		868013191F209F45000A2302 /* BlockedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298991031F1B700200AC73B3 /* BlockedCell.xib */; };
+		8680131A1F209F45000A2302 /* callvideo_hangup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E901F1B6FFC00AC73B3 /* callvideo_hangup@2x.png */; };
+		8680131B1F209F45000A2302 /* profile_callvideo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EB21F1B6FFC00AC73B3 /* profile_callvideo@2x.png */; };
+		8680131C1F209F45000A2302 /* stickerlocal48@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F071F1B6FFC00AC73B3 /* stickerlocal48@2x.png */; };
+		8680131D1F209F45000A2302 /* SwitchAccountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298991371F1B700200AC73B3 /* SwitchAccountView.xib */; };
+		8680131E1F209F45000A2302 /* stickersend20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F3A1F1B6FFC00AC73B3 /* stickersend20@2x.png */; };
+		8680131F1F209F45000A2302 /* SelectSingleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990BC1F1B700200AC73B3 /* SelectSingleCell.xib */; };
+		868013201F209F45000A2302 /* stickersend21@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F3B1F1B6FFC00AC73B3 /* stickersend21@2x.png */; };
+		868013211F209F45000A2302 /* stickerlocal67@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F1A1F1B6FFC00AC73B3 /* stickerlocal67@2x.png */; };
+		868013221F209F45000A2302 /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 29898F811F1B6FFD00AC73B3 /* privacy.html */; };
+		868013231F209F45000A2302 /* stickersend74@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F701F1B6FFD00AC73B3 /* stickersend74@2x.png */; };
+		868013241F209F45000A2302 /* SelectUsersCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990C31F1B700200AC73B3 /* SelectUsersCell1.xib */; };
+		868013251F209F45000A2302 /* stickerlocal29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EF41F1B6FFC00AC73B3 /* stickerlocal29@2x.png */; };
+		868013261F209F45000A2302 /* stickerlocal09@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EE01F1B6FFC00AC73B3 /* stickerlocal09@2x.png */; };
+		868013271F209F45000A2302 /* stickerlocal60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F131F1B6FFC00AC73B3 /* stickerlocal60@2x.png */; };
+		868013281F209F45000A2302 /* stickersend05@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F2B1F1B6FFC00AC73B3 /* stickersend05@2x.png */; };
+		868013291F209F45000A2302 /* wallpapers10@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29898F7F1F1B6FFD00AC73B3 /* wallpapers10@2x.jpg */; };
+		8680132A1F209F45000A2302 /* stickerlocal46@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F051F1B6FFC00AC73B3 /* stickerlocal46@2x.png */; };
+		8680132B1F209F45000A2302 /* AddAccountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298991301F1B700200AC73B3 /* AddAccountView.xib */; };
+		8680132C1F209F45000A2302 /* stickersend15@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F351F1B6FFC00AC73B3 /* stickersend15@2x.png */; };
+		8680132D1F209F45000A2302 /* stickersend39@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F4D1F1B6FFC00AC73B3 /* stickersend39@2x.png */; };
+		8680132E1F209F45000A2302 /* stickerlocal77@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F241F1B6FFC00AC73B3 /* stickerlocal77@2x.png */; };
+		8680132F1F209F45000A2302 /* stickerlocal65@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F181F1B6FFC00AC73B3 /* stickerlocal65@2x.png */; };
+		868013301F209F45000A2302 /* chats_blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E9F1F1B6FFC00AC73B3 /* chats_blank@2x.png */; };
+		868013311F209F45000A2302 /* stickersend68@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F6A1F1B6FFD00AC73B3 /* stickersend68@2x.png */; };
+		868013321F209F45000A2302 /* stickersend02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F281F1B6FFC00AC73B3 /* stickersend02@2x.png */; };
+		868013331F209F45000A2302 /* SelectMemberView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990B11F1B700200AC73B3 /* SelectMemberView.xib */; };
+		868013341F209F45000A2302 /* SelectMultipleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990B51F1B700200AC73B3 /* SelectMultipleCell.xib */; };
+		868013351F209F45000A2302 /* profile_blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EB01F1B6FFC00AC73B3 /* profile_blank@2x.png */; };
+		868013361F209F45000A2302 /* stickersend32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F461F1B6FFC00AC73B3 /* stickersend32@2x.png */; };
+		868013371F209F45000A2302 /* MediaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2989911D1F1B700200AC73B3 /* MediaView.xib */; };
+		868013381F209F45000A2302 /* stickerlocal53@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F0C1F1B6FFC00AC73B3 /* stickerlocal53@2x.png */; };
+		868013391F209F45000A2302 /* stickersend78@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F741F1B6FFD00AC73B3 /* stickersend78@2x.png */; };
+		8680133A1F209F45000A2302 /* launchscreen_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EAA1F1B6FFC00AC73B3 /* launchscreen_logo@2x.png */; };
+		8680133B1F209F45000A2302 /* stickerlocal66@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F191F1B6FFC00AC73B3 /* stickerlocal66@2x.png */; };
+		8680133C1F209F45000A2302 /* CacheView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298991151F1B700200AC73B3 /* CacheView.xib */; };
+		8680133D1F209F45000A2302 /* tab_settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898ECC1F1B6FFC00AC73B3 /* tab_settings@2x.png */; };
+		8680133E1F209F45000A2302 /* NetworkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2989911A1F1B700200AC73B3 /* NetworkView.xib */; };
+		8680133F1F209F45000A2302 /* stickersend64@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F661F1B6FFD00AC73B3 /* stickersend64@2x.png */; };
+		868013401F209F45000A2302 /* stickerlocal73@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F201F1B6FFC00AC73B3 /* stickerlocal73@2x.png */; };
+		868013411F209F45000A2302 /* stickersend31@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F451F1B6FFC00AC73B3 /* stickersend31@2x.png */; };
+		868013421F209F45000A2302 /* stickerlocal05@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EDC1F1B6FFC00AC73B3 /* stickerlocal05@2x.png */; };
+		868013431F209F45000A2302 /* PrivacyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298991281F1B700200AC73B3 /* PrivacyView.xib */; };
+		868013441F209F45000A2302 /* stickerlocal26@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EF11F1B6FFC00AC73B3 /* stickerlocal26@2x.png */; };
+		868013451F209F45000A2302 /* stickersend50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F581F1B6FFC00AC73B3 /* stickersend50@2x.png */; };
+		868013461F209F45000A2302 /* switchaccount_blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EC61F1B6FFC00AC73B3 /* switchaccount_blank@2x.png */; };
+		868013471F209F45000A2302 /* stickersend25@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F3F1F1B6FFC00AC73B3 /* stickersend25@2x.png */; };
+		868013481F209F45000A2302 /* advert01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E711F1B6FFC00AC73B3 /* advert01@2x.png */; };
+		868013491F209F45000A2302 /* PasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990F71F1B700200AC73B3 /* PasswordView.xib */; };
+		8680134A1F209F45000A2302 /* callvideo_blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E8F1F1B6FFC00AC73B3 /* callvideo_blank@2x.png */; };
+		8680134B1F209F45000A2302 /* CountriesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990A31F1B700200AC73B3 /* CountriesView.xib */; };
+		8680134C1F209F45000A2302 /* stickerlocal44@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F031F1B6FFC00AC73B3 /* stickerlocal44@2x.png */; };
+		8680134D1F209F45000A2302 /* stickersend62@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F641F1B6FFD00AC73B3 /* stickersend62@2x.png */; };
+		8680134E1F209F45000A2302 /* tab_calls@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EC81F1B6FFC00AC73B3 /* tab_calls@2x.png */; };
+		8680134F1F209F45000A2302 /* stickerlocal51@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F0A1F1B6FFC00AC73B3 /* stickerlocal51@2x.png */; };
+		868013501F209F45000A2302 /* stickerlocal78@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F251F1B6FFC00AC73B3 /* stickerlocal78@2x.png */; };
+		868013511F209F45000A2302 /* callaudio_video1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E8B1F1B6FFC00AC73B3 /* callaudio_video1@2x.png */; };
+		868013521F209F45000A2302 /* CallVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2989909F1F1B700200AC73B3 /* CallVideoView.xib */; };
+		868013531F209F45000A2302 /* stickersend10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F301F1B6FFC00AC73B3 /* stickersend10@2x.png */; };
+		868013541F209F45000A2302 /* stickerlocal11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EE21F1B6FFC00AC73B3 /* stickerlocal11@2x.png */; };
+		868013551F209F45000A2302 /* CallAudioView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2989909B1F1B700200AC73B3 /* CallAudioView.xib */; };
+		868013561F209F45000A2302 /* stickersend37@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F4B1F1B6FFC00AC73B3 /* stickersend37@2x.png */; };
+		868013571F209F45000A2302 /* stickerlocal62@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F151F1B6FFC00AC73B3 /* stickerlocal62@2x.png */; };
+		868013581F209F45000A2302 /* stickerlocal08@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EDF1F1B6FFC00AC73B3 /* stickerlocal08@2x.png */; };
+		868013591F209F45000A2302 /* stickersend54@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F5C1F1B6FFC00AC73B3 /* stickersend54@2x.png */; };
+		8680135A1F209F45000A2302 /* SelectUsersCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990C61F1B700200AC73B3 /* SelectUsersCell2.xib */; };
+		8680135B1F209F45000A2302 /* LoginPhoneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298991D81F1B700200AC73B3 /* LoginPhoneView.xib */; };
+		8680135C1F209F45000A2302 /* stickerlocal74@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F211F1B6FFC00AC73B3 /* stickerlocal74@2x.png */; };
+		8680135D1F209F45000A2302 /* allmedia_video@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E7E1F1B6FFC00AC73B3 /* allmedia_video@2x.png */; };
+		8680135E1F209F45000A2302 /* welcome_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898ED01F1B6FFC00AC73B3 /* welcome_logo@2x.png */; };
+		8680135F1F209F45000A2302 /* stickersend16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F361F1B6FFC00AC73B3 /* stickersend16@2x.png */; };
+		868013601F209F45000A2302 /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2989907D1F1B700200AC73B3 /* ProfileView.xib */; };
+		868013611F209F45000A2302 /* stickersend23@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F3D1F1B6FFC00AC73B3 /* stickersend23@2x.png */; };
+		868013621F209F45000A2302 /* stickerlocal72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F1F1F1B6FFC00AC73B3 /* stickerlocal72@2x.png */; };
+		868013631F209F45000A2302 /* stickerlocal07@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EDE1F1B6FFC00AC73B3 /* stickerlocal07@2x.png */; };
+		868013641F209F45000A2302 /* people_blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EAE1F1B6FFC00AC73B3 /* people_blank@2x.png */; };
+		868013651F209F45000A2302 /* SelectSingleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990BF1F1B700200AC73B3 /* SelectSingleView.xib */; };
+		868013661F209F45000A2302 /* stickersend44@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F521F1B6FFC00AC73B3 /* stickersend44@2x.png */; };
+		868013671F209F45000A2302 /* stickersend52@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F5A1F1B6FFC00AC73B3 /* stickersend52@2x.png */; };
+		868013681F209F45000A2302 /* StickersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990CD1F1B700200AC73B3 /* StickersCell.xib */; };
+		868013691F209F45000A2302 /* SelectMemberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990AE1F1B700200AC73B3 /* SelectMemberCell.xib */; };
+		8680136A1F209F45000A2302 /* stickersend48@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F561F1B6FFC00AC73B3 /* stickersend48@2x.png */; };
+		8680136B1F209F45000A2302 /* selectmember_blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EBA1F1B6FFC00AC73B3 /* selectmember_blank@2x.png */; };
+		8680136C1F209F45000A2302 /* wallpapers07@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29898F7C1F1B6FFD00AC73B3 /* wallpapers07@2x.jpg */; };
+		8680136D1F209F45000A2302 /* BlockedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298991061F1B700200AC73B3 /* BlockedView.xib */; };
+		8680136E1F209F45000A2302 /* archive_blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E801F1B6FFC00AC73B3 /* archive_blank@2x.png */; };
+		8680136F1F209F45000A2302 /* LoginGoogleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298991D01F1B700200AC73B3 /* LoginGoogleView.xib */; };
+		868013701F209F45000A2302 /* stickerlocal22@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EED1F1B6FFC00AC73B3 /* stickerlocal22@2x.png */; };
+		868013711F209F45000A2302 /* tab_people@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898ECB1F1B6FFC00AC73B3 /* tab_people@2x.png */; };
+		868013721F209F45000A2302 /* CustomStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990FC1F1B700200AC73B3 /* CustomStatusView.xib */; };
+		868013731F209F45000A2302 /* stickersend70@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F6C1F1B6FFD00AC73B3 /* stickersend70@2x.png */; };
+		868013741F209F45000A2302 /* stickerlocal15@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EE61F1B6FFC00AC73B3 /* stickerlocal15@2x.png */; };
+		868013751F209F45000A2302 /* stickerlocal70@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F1D1F1B6FFC00AC73B3 /* stickerlocal70@2x.png */; };
+		868013761F209F45000A2302 /* stickersend61@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F631F1B6FFD00AC73B3 /* stickersend61@2x.png */; };
+		868013771F209F45000A2302 /* editprofile_blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EA31F1B6FFC00AC73B3 /* editprofile_blank@2x.png */; };
+		868013781F209F45000A2302 /* stickersend69@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F6B1F1B6FFD00AC73B3 /* stickersend69@2x.png */; };
+		868013791F209F45000A2302 /* stickerlocal50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F091F1B6FFC00AC73B3 /* stickerlocal50@2x.png */; };
+		8680137A1F209F45000A2302 /* stickerlocal47@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F061F1B6FFC00AC73B3 /* stickerlocal47@2x.png */; };
+		8680137B1F209F45000A2302 /* countries.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29898ED21F1B6FFC00AC73B3 /* countries.plist */; };
+		8680137C1F209F45000A2302 /* advert09@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E791F1B6FFC00AC73B3 /* advert09@2x.png */; };
+		8680137D1F209F45000A2302 /* callvideo_switch2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E941F1B6FFC00AC73B3 /* callvideo_switch2@2x.png */; };
+		8680137E1F209F45000A2302 /* stickersend22@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F3C1F1B6FFC00AC73B3 /* stickersend22@2x.png */; };
+		8680137F1F209F45000A2302 /* advert07@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E771F1B6FFC00AC73B3 /* advert07@2x.png */; };
+		868013801F209F45000A2302 /* callaudio_video2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E8C1F1B6FFC00AC73B3 /* callaudio_video2@2x.png */; };
+		868013811F209F45000A2302 /* stickerlocal41@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F001F1B6FFC00AC73B3 /* stickerlocal41@2x.png */; };
+		868013821F209F45000A2302 /* stickerlocal43@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F021F1B6FFC00AC73B3 /* stickerlocal43@2x.png */; };
+		868013831F209F45000A2302 /* call_ringback.wav in Resources */ = {isa = PBXBuildFile; fileRef = 29898ED61F1B6FFC00AC73B3 /* call_ringback.wav */; };
+		868013841F209F45000A2302 /* WallpapersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298991211F1B700200AC73B3 /* WallpapersCell.xib */; };
+		868013851F209F45000A2302 /* stickersend19@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F391F1B6FFC00AC73B3 /* stickersend19@2x.png */; };
+		868013861F209F45000A2302 /* stickerlocal55@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F0E1F1B6FFC00AC73B3 /* stickerlocal55@2x.png */; };
+		868013871F209F45000A2302 /* groups_blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EA81F1B6FFC00AC73B3 /* groups_blank@2x.png */; };
+		868013881F209F45000A2302 /* stickersend04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F2A1F1B6FFC00AC73B3 /* stickersend04@2x.png */; };
+		868013891F209F45000A2302 /* selectmultiple_blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EBC1F1B6FFC00AC73B3 /* selectmultiple_blank@2x.png */; };
+		8680138A1F209F45000A2302 /* group_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EA61F1B6FFC00AC73B3 /* group_more@2x.png */; };
+		8680138B1F209F45000A2302 /* call_incoming.wav in Resources */ = {isa = PBXBuildFile; fileRef = 29898ED51F1B6FFC00AC73B3 /* call_incoming.wav */; };
+		8680138C1F209F45000A2302 /* advert03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E731F1B6FFC00AC73B3 /* advert03@2x.png */; };
+		8680138D1F209F45000A2302 /* ArchiveView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2989910D1F1B700200AC73B3 /* ArchiveView.xib */; };
+		8680138E1F209F45000A2302 /* stickerlocal71@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F1E1F1B6FFC00AC73B3 /* stickerlocal71@2x.png */; };
+		8680138F1F209F45000A2302 /* stickerlocal18@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EE91F1B6FFC00AC73B3 /* stickerlocal18@2x.png */; };
+		868013901F209F45000A2302 /* chat_callvideo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E981F1B6FFC00AC73B3 /* chat_callvideo@2x.png */; };
+		868013911F209F45000A2302 /* stickersend63@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F651F1B6FFD00AC73B3 /* stickersend63@2x.png */; };
+		868013921F209F45000A2302 /* CreateGroupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990E81F1B700200AC73B3 /* CreateGroupView.xib */; };
+		868013931F209F45000A2302 /* callaudio_speaker1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E891F1B6FFC00AC73B3 /* callaudio_speaker1@2x.png */; };
+		868013941F209F45000A2302 /* stickerlocal76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F231F1B6FFC00AC73B3 /* stickerlocal76@2x.png */; };
+		868013951F209F45000A2302 /* stickerlocal10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EE11F1B6FFC00AC73B3 /* stickerlocal10@2x.png */; };
+		868013961F209F45000A2302 /* stickerlocal19@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EEA1F1B6FFC00AC73B3 /* stickerlocal19@2x.png */; };
+		868013971F209F45000A2302 /* stickersend36@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F4A1F1B6FFC00AC73B3 /* stickersend36@2x.png */; };
+		868013981F209F45000A2302 /* profile_callaudio@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EB11F1B6FFC00AC73B3 /* profile_callaudio@2x.png */; };
+		868013991F209F45000A2302 /* stickersend28@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F421F1B6FFC00AC73B3 /* stickersend28@2x.png */; };
+		8680139A1F209F45000A2302 /* advert11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E7B1F1B6FFC00AC73B3 /* advert11@2x.png */; };
+		8680139B1F209F45000A2302 /* stickerlocal02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898ED91F1B6FFC00AC73B3 /* stickerlocal02@2x.png */; };
+		8680139C1F209F45000A2302 /* stickers_blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EC41F1B6FFC00AC73B3 /* stickers_blank@2x.png */; };
+		8680139D1F209F45000A2302 /* stickerlocal39@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EFE1F1B6FFC00AC73B3 /* stickerlocal39@2x.png */; };
+		8680139E1F209F45000A2302 /* stickerlocal69@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F1C1F1B6FFC00AC73B3 /* stickerlocal69@2x.png */; };
+		8680139F1F209F45000A2302 /* stickersend60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F621F1B6FFD00AC73B3 /* stickersend60@2x.png */; };
+		868013A11F209F45000A2302 /* stickerlocal45@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F041F1B6FFC00AC73B3 /* stickerlocal45@2x.png */; };
+		868013A21F209F45000A2302 /* stickersend33@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F471F1B6FFC00AC73B3 /* stickersend33@2x.png */; };
+		868013A31F209F45000A2302 /* stickerlocal49@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F081F1B6FFC00AC73B3 /* stickerlocal49@2x.png */; };
+		868013A41F209F45000A2302 /* ChatsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990D81F1B700200AC73B3 /* ChatsView.xib */; };
+		868013A51F209F45000A2302 /* callaudio_mute2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E881F1B6FFC00AC73B3 /* callaudio_mute2@2x.png */; };
+		868013A61F209F45000A2302 /* stickersend26@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F401F1B6FFC00AC73B3 /* stickersend26@2x.png */; };
+		868013A71F209F45000A2302 /* chat_picture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E9B1F1B6FFC00AC73B3 /* chat_picture@2x.png */; };
+		868013A81F209F45000A2302 /* stickerlocal68@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F1B1F1B6FFC00AC73B3 /* stickerlocal68@2x.png */; };
+		868013A91F209F45000A2302 /* stickersend30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F441F1B6FFC00AC73B3 /* stickersend30@2x.png */; };
+		868013AA1F209F45000A2302 /* stickerlocal61@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F141F1B6FFC00AC73B3 /* stickerlocal61@2x.png */; };
+		868013AB1F209F45000A2302 /* wallpapers09@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29898F7E1F1B6FFD00AC73B3 /* wallpapers09@2x.jpg */; };
+		868013AC1F209F45000A2302 /* stickerlocal57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F101F1B6FFC00AC73B3 /* stickerlocal57@2x.png */; };
+		868013AD1F209F45000A2302 /* wallpaper_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898ECE1F1B6FFC00AC73B3 /* wallpaper_selected@2x.png */; };
+		868013AE1F209F45000A2302 /* GroupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990811F1B700200AC73B3 /* GroupView.xib */; };
+		868013AF1F209F45000A2302 /* callaudio_speaker2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E8A1F1B6FFC00AC73B3 /* callaudio_speaker2@2x.png */; };
+		868013B01F209F45000A2302 /* stickersend42@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F501F1B6FFC00AC73B3 /* stickersend42@2x.png */; };
+		868013B11F209F45000A2302 /* settings_blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EC21F1B6FFC00AC73B3 /* settings_blank@2x.png */; };
+		868013B21F209F45000A2302 /* stickerlocal01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898ED81F1B6FFC00AC73B3 /* stickerlocal01@2x.png */; };
+		868013B31F209F45000A2302 /* SelectUsersView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990C91F1B700200AC73B3 /* SelectUsersView.xib */; };
+		868013B41F209F45000A2302 /* stickerlocal20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EEB1F1B6FFC00AC73B3 /* stickerlocal20@2x.png */; };
+		868013B51F209F45000A2302 /* chat_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E991F1B6FFC00AC73B3 /* chat_camera@2x.png */; };
+		868013B61F209F45000A2302 /* KeepMediaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298991121F1B700200AC73B3 /* KeepMediaView.xib */; };
+		868013B71F209F45000A2302 /* stickerlocal21@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EEC1F1B6FFC00AC73B3 /* stickerlocal21@2x.png */; };
+		868013B81F209F45000A2302 /* stickerlocal32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EF71F1B6FFC00AC73B3 /* stickerlocal32@2x.png */; };
+		868013B91F209F45000A2302 /* chat_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E961F1B6FFC00AC73B3 /* chat_back@2x.png */; };
+		868013BA1F209F45000A2302 /* PeopleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990E01F1B700200AC73B3 /* PeopleCell.xib */; };
+		868013BB1F209F45000A2302 /* stickerlocal30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EF51F1B6FFC00AC73B3 /* stickerlocal30@2x.png */; };
+		868013BC1F209F45000A2302 /* stickersend55@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F5D1F1B6FFC00AC73B3 /* stickersend55@2x.png */; };
+		868013BD1F209F45000A2302 /* callaudio_mute1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E871F1B6FFC00AC73B3 /* callaudio_mute1@2x.png */; };
+		868013BE1F209F45000A2302 /* stickerlocal27@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EF21F1B6FFC00AC73B3 /* stickerlocal27@2x.png */; };
+		868013BF1F209F45000A2302 /* stickersend43@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F511F1B6FFC00AC73B3 /* stickersend43@2x.png */; };
+		868013C01F209F45000A2302 /* StickersView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990D01F1B700200AC73B3 /* StickersView.xib */; };
+		868013C11F209F45000A2302 /* stickerlocal13@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EE41F1B6FFC00AC73B3 /* stickerlocal13@2x.png */; };
+		868013C21F209F45000A2302 /* stickersend06@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F2C1F1B6FFC00AC73B3 /* stickersend06@2x.png */; };
+		868013C31F209F45000A2302 /* GroupsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990EE1F1B700200AC73B3 /* GroupsView.xib */; };
+		868013C41F209F45000A2302 /* stickersend29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F431F1B6FFC00AC73B3 /* stickersend29@2x.png */; };
+		868013C51F209F45000A2302 /* AllMediaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298990851F1B700200AC73B3 /* AllMediaCell.xib */; };
+		868013C61F209F45000A2302 /* addaccount_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E6F1F1B6FFC00AC73B3 /* addaccount_logo@2x.png */; };
+		868013C71F209F45000A2302 /* stickerlocal38@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898EFD1F1B6FFC00AC73B3 /* stickerlocal38@2x.png */; };
+		868013C81F209F45000A2302 /* wallpapers08@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29898F7D1F1B6FFD00AC73B3 /* wallpapers08@2x.jpg */; };
+		868013C91F209F45000A2302 /* stickerlocal75@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F221F1B6FFC00AC73B3 /* stickerlocal75@2x.png */; };
+		868013CA1F209F45000A2302 /* callvideo_mute2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E921F1B6FFC00AC73B3 /* callvideo_mute2@2x.png */; };
+		868013E51F2725CA000A2302 /* GoogleService-Info_dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = 868013E31F27259C000A2302 /* GoogleService-Info_dev.plist */; };
+		868013E81F272B49000A2302 /* AppConstant_dev.m in Sources */ = {isa = PBXBuildFile; fileRef = 868013E71F272A47000A2302 /* AppConstant_dev.m */; };
+		868013EA1F272B64000A2302 /* AppConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 868013E91F272B64000A2302 /* AppConstant.m */; };
+		868013EB1F272B94000A2302 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29D29F051D9A59E4006CA074 /* Info.plist */; };
+		868013EE1F272BDA000A2302 /* Info_dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = 868013EC1F272BBA000A2302 /* Info_dev.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1044,6 +1484,12 @@
 		29D29F031D9A59E4006CA074 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29D29F051D9A59E4006CA074 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7393A6F3A4D6270AF7ACDCFA /* Pods-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-app/Pods-app.release.xcconfig"; sourceTree = "<group>"; };
+		868013D11F209F46000A2302 /* Messenger_dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messenger_dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		868013D21F209F5B000A2302 /* app copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "app copy-Info.plist"; path = "/Users/recomot/Documents/kou/Messenger/Messenger/app copy-Info.plist"; sourceTree = "<absolute>"; };
+		868013E31F27259C000A2302 /* GoogleService-Info_dev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info_dev.plist"; sourceTree = "<group>"; };
+		868013E71F272A47000A2302 /* AppConstant_dev.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConstant_dev.m; sourceTree = "<group>"; };
+		868013E91F272B64000A2302 /* AppConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConstant.m; sourceTree = "<group>"; };
+		868013EC1F272BBA000A2302 /* Info_dev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_dev.plist; sourceTree = "<group>"; };
 		FAF0EF40EF90293E7039F76D /* libPods-app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC28F63C1114893726170446 /* Pods-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-app/Pods-app.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1055,6 +1501,15 @@
 			files = (
 				291F172F1DCCF60E004CA70F /* PushKit.framework in Frameworks */,
 				15DC3685A1147E3ADFDCC539 /* libPods-app.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8680129A1F209F45000A2302 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8680129B1F209F45000A2302 /* PushKit.framework in Frameworks */,
+				8680129C1F209F45000A2302 /* libPods-app.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2502,6 +2957,7 @@
 				29D29EF21D9A59E4006CA074 /* Products */,
 				7B8B1B7262BA6687D240D5CB /* Pods */,
 				BD5925BEFAEDA190E57A7F14 /* Frameworks */,
+				868013D21F209F5B000A2302 /* app copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2509,6 +2965,7 @@
 			isa = PBXGroup;
 			children = (
 				29D29EF11D9A59E4006CA074 /* app.app */,
+				868013D11F209F46000A2302 /* Messenger_dev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2516,8 +2973,10 @@
 		29D29EF31D9A59E4006CA074 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				868013E61F27263A000A2302 /* dev */,
 				295015181D9A5C1B00AFD8B3 /* app.entitlements */,
 				295018301D9A5CE600AFD8B3 /* AppConstant.h */,
+				868013E91F272B64000A2302 /* AppConstant.m */,
 				29D29EF71D9A59E4006CA074 /* AppDelegate.h */,
 				29D29EF81D9A59E4006CA074 /* AppDelegate.m */,
 				29D29F001D9A59E4006CA074 /* Assets.xcassets */,
@@ -2544,6 +3003,16 @@
 				7393A6F3A4D6270AF7ACDCFA /* Pods-app.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		868013E61F27263A000A2302 /* dev */ = {
+			isa = PBXGroup;
+			children = (
+				868013EC1F272BBA000A2302 /* Info_dev.plist */,
+				868013E71F272A47000A2302 /* AppConstant_dev.m */,
+				868013E31F27259C000A2302 /* GoogleService-Info_dev.plist */,
+			);
+			name = dev;
 			sourceTree = "<group>";
 		};
 		BD5925BEFAEDA190E57A7F14 /* Frameworks */ = {
@@ -2579,6 +3048,28 @@
 			productReference = 29D29EF11D9A59E4006CA074 /* app.app */;
 			productType = "com.apple.product-type.application";
 		};
+		868012121F209F45000A2302 /* Messenger_dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 868013CE1F209F45000A2302 /* Build configuration list for PBXNativeTarget "Messenger_dev" */;
+			buildPhases = (
+				868012131F209F45000A2302 /* [CP] Check Pods Manifest.lock */,
+				868012141F209F45000A2302 /* Sources */,
+				8680129A1F209F45000A2302 /* Frameworks */,
+				8680129D1F209F45000A2302 /* Resources */,
+				868013CB1F209F45000A2302 /* ShellScript */,
+				868013CC1F209F45000A2302 /* [CP] Embed Pods Frameworks */,
+				868013CD1F209F45000A2302 /* [CP] Copy Pods Resources */,
+				868013D31F219C36000A2302 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Messenger_dev;
+			productName = app;
+			productReference = 868013D11F209F46000A2302 /* Messenger_dev.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -2590,19 +3081,22 @@
 				TargetAttributes = {
 					29D29EF01D9A59E4006CA074 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = UUF85U8HLF;
+						DevelopmentTeam = ATSE3MDB5Y;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
 							com.apple.Keychain = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.Push = {
 								enabled = 1;
 							};
 						};
+					};
+					868012121F209F45000A2302 = {
+						DevelopmentTeam = 58V87X55PH;
 					};
 				};
 			};
@@ -2620,6 +3114,7 @@
 			projectRoot = "";
 			targets = (
 				29D29EF01D9A59E4006CA074 /* app */,
+				868012121F209F45000A2302 /* Messenger_dev */,
 			);
 		};
 /* End PBXProject section */
@@ -2911,6 +3406,7 @@
 				29898FA61F1B6FFD00AC73B3 /* chat_camera@2x.png in Resources */,
 				298992311F1B700300AC73B3 /* KeepMediaView.xib in Resources */,
 				29898FDF1F1B6FFD00AC73B3 /* stickerlocal21@2x.png in Resources */,
+				868013EB1F272B94000A2302 /* Info.plist in Resources */,
 				29898FEA1F1B6FFD00AC73B3 /* stickerlocal32@2x.png in Resources */,
 				29898FA31F1B6FFD00AC73B3 /* chat_back@2x.png in Resources */,
 				298992171F1B700300AC73B3 /* PeopleCell.xib in Resources */,
@@ -2933,6 +3429,315 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8680129D1F209F45000A2302 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8680129E1F209F45000A2302 /* stickerlocal59@2x.png in Resources */,
+				8680129F1F209F45000A2302 /* advert08@2x.png in Resources */,
+				868012A01F209F45000A2302 /* register_logo@2x.png in Resources */,
+				868012A11F209F45000A2302 /* stickerlocal35@2x.png in Resources */,
+				868012A21F209F45000A2302 /* AllMediaView.xib in Resources */,
+				868012A31F209F45000A2302 /* stickerlocal64@2x.png in Resources */,
+				868012A41F209F45000A2302 /* stickerlocal24@2x.png in Resources */,
+				868012A51F209F45000A2302 /* callvideo_switch1@2x.png in Resources */,
+				868012A61F209F45000A2302 /* GroupsCell.xib in Resources */,
+				868012A71F209F45000A2302 /* login_logo@2x.png in Resources */,
+				868012A81F209F45000A2302 /* stickersend45@2x.png in Resources */,
+				868012A91F209F45000A2302 /* LaunchScreen.storyboard in Resources */,
+				868012AA1F209F45000A2302 /* stickersend11@2x.png in Resources */,
+				868012AB1F209F45000A2302 /* advert10@2x.png in Resources */,
+				868012AC1F209F45000A2302 /* stickersend17@2x.png in Resources */,
+				868012AD1F209F45000A2302 /* stickersend27@2x.png in Resources */,
+				868012AE1F209F45000A2302 /* callaudio_hangup@2x.png in Resources */,
+				868012AF1F209F45000A2302 /* stickersend57@2x.png in Resources */,
+				868012B01F209F45000A2302 /* stickersend76@2x.png in Resources */,
+				868012B11F209F45000A2302 /* callvideo_mute1@2x.png in Resources */,
+				868012B21F209F45000A2302 /* stickersend09@2x.png in Resources */,
+				868012B31F209F45000A2302 /* selectgroup_blank@2x.png in Resources */,
+				868012B41F209F45000A2302 /* wallpapers02@2x.jpg in Resources */,
+				868012B51F209F45000A2302 /* stickerlocal54@2x.png in Resources */,
+				868012B61F209F45000A2302 /* tab_groups@2x.png in Resources */,
+				868012B71F209F45000A2302 /* callaudio_blank@2x.png in Resources */,
+				868012B81F209F45000A2302 /* WallpapersView.xib in Resources */,
+				868012B91F209F45000A2302 /* stickersend40@2x.png in Resources */,
+				868012BA1F209F45000A2302 /* stickerlocal17@2x.png in Resources */,
+				868012BB1F209F45000A2302 /* stickersend51@2x.png in Resources */,
+				868012BC1F209F45000A2302 /* wallpapers05@2x.jpg in Resources */,
+				868012BD1F209F45000A2302 /* stickersend13@2x.png in Resources */,
+				868012BE1F209F45000A2302 /* stickerlocal56@2x.png in Resources */,
+				868012BF1F209F45000A2302 /* VideoView.xib in Resources */,
+				868012C01F209F45000A2302 /* stickersend59@2x.png in Resources */,
+				868012C11F209F45000A2302 /* stickerlocal40@2x.png in Resources */,
+				868012C21F209F45000A2302 /* WelcomeView.xib in Resources */,
+				868012C31F209F45000A2302 /* callvideo_answer@2x.png in Resources */,
+				868012C41F209F45000A2302 /* stickersend07@2x.png in Resources */,
+				868012C51F209F45000A2302 /* SettingsView.xib in Resources */,
+				868012C61F209F45000A2302 /* blocked_blank@2x.png in Resources */,
+				868012C71F209F45000A2302 /* stickerlocal04@2x.png in Resources */,
+				868012C81F209F45000A2302 /* stickersend53@2x.png in Resources */,
+				868012C91F209F45000A2302 /* stickersend38@2x.png in Resources */,
+				868012CA1F209F45000A2302 /* advert04@2x.png in Resources */,
+				868012CB1F209F45000A2302 /* creategroup_blank@2x.png in Resources */,
+				868012CC1F209F45000A2302 /* stickerlocal36@2x.png in Resources */,
+				868012CD1F209F45000A2302 /* StatusView.xib in Resources */,
+				868012CE1F209F45000A2302 /* stickersend72@2x.png in Resources */,
+				868012CF1F209F45000A2302 /* ChatsCell.xib in Resources */,
+				868012D01F209F45000A2302 /* PeopleView.xib in Resources */,
+				868012D11F209F45000A2302 /* stickerlocal42@2x.png in Resources */,
+				868012D21F209F45000A2302 /* VerifySMSView.xib in Resources */,
+				868012D31F209F45000A2302 /* stickerlocal33@2x.png in Resources */,
+				868012D41F209F45000A2302 /* Assets.xcassets in Resources */,
+				868013E51F2725CA000A2302 /* GoogleService-Info_dev.plist in Resources */,
+				868012D51F209F45000A2302 /* wallpapers03@2x.jpg in Resources */,
+				868012D61F209F45000A2302 /* stickerlocal25@2x.png in Resources */,
+				868012D71F209F45000A2302 /* stickersend66@2x.png in Resources */,
+				868012D81F209F45000A2302 /* stickerlocal58@2x.png in Resources */,
+				868012D91F209F45000A2302 /* stickerlocal63@2x.png in Resources */,
+				868012DA1F209F45000A2302 /* recent_muted@2x.png in Resources */,
+				868012DB1F209F45000A2302 /* stickersend34@2x.png in Resources */,
+				868012DC1F209F45000A2302 /* ArchiveCell.xib in Resources */,
+				868012DD1F209F45000A2302 /* stickerlocal12@2x.png in Resources */,
+				868012DE1F209F45000A2302 /* wallpapers06@2x.jpg in Resources */,
+				868012DF1F209F45000A2302 /* stickerlocal52@2x.png in Resources */,
+				868012E01F209F45000A2302 /* SwitchAccountCell.xib in Resources */,
+				868012E11F209F45000A2302 /* TermsView.xib in Resources */,
+				868012E21F209F45000A2302 /* stickerlocal16@2x.png in Resources */,
+				868012E31F209F45000A2302 /* stickersend71@2x.png in Resources */,
+				868012E41F209F45000A2302 /* stickersend08@2x.png in Resources */,
+				868012E51F209F45000A2302 /* chat_video@2x.png in Resources */,
+				868012E61F209F45000A2302 /* stickerlocal31@2x.png in Resources */,
+				868012E71F209F45000A2302 /* wallpapers01@2x.jpg in Resources */,
+				868012E81F209F45000A2302 /* stickersend12@2x.png in Resources */,
+				868012E91F209F45000A2302 /* stickersend56@2x.png in Resources */,
+				868012EA1F209F45000A2302 /* stickersend58@2x.png in Resources */,
+				868012EB1F209F45000A2302 /* stickersend35@2x.png in Resources */,
+				868012EC1F209F45000A2302 /* MapView.xib in Resources */,
+				868012ED1F209F45000A2302 /* LoginEmailView.xib in Resources */,
+				868012EE1F209F45000A2302 /* SelectMultipleView.xib in Resources */,
+				868012EF1F209F45000A2302 /* RegisterEmailView.xib in Resources */,
+				868012F01F209F45000A2302 /* stickerlocal14@2x.png in Resources */,
+				868012F11F209F45000A2302 /* stickersend14@2x.png in Resources */,
+				868012F21F209F45000A2302 /* stickerlocal06@2x.png in Resources */,
+				868012F31F209F45000A2302 /* stickerlocal28@2x.png in Resources */,
+				868012F41F209F45000A2302 /* chat_location@2x.png in Resources */,
+				868012F51F209F45000A2302 /* stickersend49@2x.png in Resources */,
+				868012F61F209F45000A2302 /* advert02@2x.png in Resources */,
+				868012F71F209F45000A2302 /* stickerlocal34@2x.png in Resources */,
+				868012F81F209F45000A2302 /* callaudio_answer@2x.png in Resources */,
+				868012F91F209F45000A2302 /* selectusers_blank@2x.png in Resources */,
+				868012FA1F209F45000A2302 /* SelectGroupCell.xib in Resources */,
+				868012FB1F209F45000A2302 /* stickersend18@2x.png in Resources */,
+				868012FC1F209F45000A2302 /* stickersend46@2x.png in Resources */,
+				868012FD1F209F45000A2302 /* stickersend24@2x.png in Resources */,
+				868012FE1F209F45000A2302 /* tab_chats@2x.png in Resources */,
+				868012FF1F209F45000A2302 /* selectsingle_blank@2x.png in Resources */,
+				868013001F209F45000A2302 /* AdvertCustomView.xib in Resources */,
+				868013011F209F45000A2302 /* AdvertPremiumView.xib in Resources */,
+				868013021F209F45000A2302 /* stickersend77@2x.png in Resources */,
+				868013031F209F45000A2302 /* wallpapers04@2x.jpg in Resources */,
+				868013041F209F45000A2302 /* stickersend65@2x.png in Resources */,
+				868013051F209F45000A2302 /* terms.html in Resources */,
+				868013061F209F45000A2302 /* stickerlocal37@2x.png in Resources */,
+				868013071F209F45000A2302 /* advert06@2x.png in Resources */,
+				868013081F209F45000A2302 /* stickersend01@2x.png in Resources */,
+				868013091F209F45000A2302 /* stickersend73@2x.png in Resources */,
+				8680130A1F209F45000A2302 /* stickerlocal03@2x.png in Resources */,
+				8680130B1F209F45000A2302 /* group_blank@2x.png in Resources */,
+				8680130C1F209F45000A2302 /* advert05@2x.png in Resources */,
+				8680130D1F209F45000A2302 /* chat_sticker@2x.png in Resources */,
+				8680130E1F209F45000A2302 /* SelectGroupView.xib in Resources */,
+				8680130F1F209F45000A2302 /* stickersend47@2x.png in Resources */,
+				868013101F209F45000A2302 /* stickersend41@2x.png in Resources */,
+				868013111F209F45000A2302 /* stickerlocal23@2x.png in Resources */,
+				868013121F209F45000A2302 /* CallsView.xib in Resources */,
+				868013131F209F45000A2302 /* stickersend75@2x.png in Resources */,
+				868013141F209F45000A2302 /* EditProfileView.xib in Resources */,
+				868013151F209F45000A2302 /* stickersend67@2x.png in Resources */,
+				868013161F209F45000A2302 /* stickersend03@2x.png in Resources */,
+				868013171F209F45000A2302 /* allmedia_blank@2x.png in Resources */,
+				868013181F209F45000A2302 /* chat_callaudio@2x.png in Resources */,
+				868013191F209F45000A2302 /* BlockedCell.xib in Resources */,
+				8680131A1F209F45000A2302 /* callvideo_hangup@2x.png in Resources */,
+				8680131B1F209F45000A2302 /* profile_callvideo@2x.png in Resources */,
+				8680131C1F209F45000A2302 /* stickerlocal48@2x.png in Resources */,
+				8680131D1F209F45000A2302 /* SwitchAccountView.xib in Resources */,
+				8680131E1F209F45000A2302 /* stickersend20@2x.png in Resources */,
+				8680131F1F209F45000A2302 /* SelectSingleCell.xib in Resources */,
+				868013201F209F45000A2302 /* stickersend21@2x.png in Resources */,
+				868013211F209F45000A2302 /* stickerlocal67@2x.png in Resources */,
+				868013221F209F45000A2302 /* privacy.html in Resources */,
+				868013231F209F45000A2302 /* stickersend74@2x.png in Resources */,
+				868013241F209F45000A2302 /* SelectUsersCell1.xib in Resources */,
+				868013251F209F45000A2302 /* stickerlocal29@2x.png in Resources */,
+				868013261F209F45000A2302 /* stickerlocal09@2x.png in Resources */,
+				868013271F209F45000A2302 /* stickerlocal60@2x.png in Resources */,
+				868013281F209F45000A2302 /* stickersend05@2x.png in Resources */,
+				868013291F209F45000A2302 /* wallpapers10@2x.jpg in Resources */,
+				8680132A1F209F45000A2302 /* stickerlocal46@2x.png in Resources */,
+				8680132B1F209F45000A2302 /* AddAccountView.xib in Resources */,
+				8680132C1F209F45000A2302 /* stickersend15@2x.png in Resources */,
+				8680132D1F209F45000A2302 /* stickersend39@2x.png in Resources */,
+				8680132E1F209F45000A2302 /* stickerlocal77@2x.png in Resources */,
+				8680132F1F209F45000A2302 /* stickerlocal65@2x.png in Resources */,
+				868013301F209F45000A2302 /* chats_blank@2x.png in Resources */,
+				868013311F209F45000A2302 /* stickersend68@2x.png in Resources */,
+				868013321F209F45000A2302 /* stickersend02@2x.png in Resources */,
+				868013331F209F45000A2302 /* SelectMemberView.xib in Resources */,
+				868013341F209F45000A2302 /* SelectMultipleCell.xib in Resources */,
+				868013351F209F45000A2302 /* profile_blank@2x.png in Resources */,
+				868013361F209F45000A2302 /* stickersend32@2x.png in Resources */,
+				868013371F209F45000A2302 /* MediaView.xib in Resources */,
+				868013381F209F45000A2302 /* stickerlocal53@2x.png in Resources */,
+				868013391F209F45000A2302 /* stickersend78@2x.png in Resources */,
+				8680133A1F209F45000A2302 /* launchscreen_logo@2x.png in Resources */,
+				8680133B1F209F45000A2302 /* stickerlocal66@2x.png in Resources */,
+				8680133C1F209F45000A2302 /* CacheView.xib in Resources */,
+				8680133D1F209F45000A2302 /* tab_settings@2x.png in Resources */,
+				8680133E1F209F45000A2302 /* NetworkView.xib in Resources */,
+				8680133F1F209F45000A2302 /* stickersend64@2x.png in Resources */,
+				868013401F209F45000A2302 /* stickerlocal73@2x.png in Resources */,
+				868013411F209F45000A2302 /* stickersend31@2x.png in Resources */,
+				868013421F209F45000A2302 /* stickerlocal05@2x.png in Resources */,
+				868013431F209F45000A2302 /* PrivacyView.xib in Resources */,
+				868013441F209F45000A2302 /* stickerlocal26@2x.png in Resources */,
+				868013451F209F45000A2302 /* stickersend50@2x.png in Resources */,
+				868013461F209F45000A2302 /* switchaccount_blank@2x.png in Resources */,
+				868013471F209F45000A2302 /* stickersend25@2x.png in Resources */,
+				868013481F209F45000A2302 /* advert01@2x.png in Resources */,
+				868013491F209F45000A2302 /* PasswordView.xib in Resources */,
+				8680134A1F209F45000A2302 /* callvideo_blank@2x.png in Resources */,
+				8680134B1F209F45000A2302 /* CountriesView.xib in Resources */,
+				8680134C1F209F45000A2302 /* stickerlocal44@2x.png in Resources */,
+				8680134D1F209F45000A2302 /* stickersend62@2x.png in Resources */,
+				8680134E1F209F45000A2302 /* tab_calls@2x.png in Resources */,
+				8680134F1F209F45000A2302 /* stickerlocal51@2x.png in Resources */,
+				868013501F209F45000A2302 /* stickerlocal78@2x.png in Resources */,
+				868013511F209F45000A2302 /* callaudio_video1@2x.png in Resources */,
+				868013521F209F45000A2302 /* CallVideoView.xib in Resources */,
+				868013531F209F45000A2302 /* stickersend10@2x.png in Resources */,
+				868013541F209F45000A2302 /* stickerlocal11@2x.png in Resources */,
+				868013551F209F45000A2302 /* CallAudioView.xib in Resources */,
+				868013561F209F45000A2302 /* stickersend37@2x.png in Resources */,
+				868013571F209F45000A2302 /* stickerlocal62@2x.png in Resources */,
+				868013581F209F45000A2302 /* stickerlocal08@2x.png in Resources */,
+				868013591F209F45000A2302 /* stickersend54@2x.png in Resources */,
+				8680135A1F209F45000A2302 /* SelectUsersCell2.xib in Resources */,
+				868013EE1F272BDA000A2302 /* Info_dev.plist in Resources */,
+				8680135B1F209F45000A2302 /* LoginPhoneView.xib in Resources */,
+				8680135C1F209F45000A2302 /* stickerlocal74@2x.png in Resources */,
+				8680135D1F209F45000A2302 /* allmedia_video@2x.png in Resources */,
+				8680135E1F209F45000A2302 /* welcome_logo@2x.png in Resources */,
+				8680135F1F209F45000A2302 /* stickersend16@2x.png in Resources */,
+				868013601F209F45000A2302 /* ProfileView.xib in Resources */,
+				868013611F209F45000A2302 /* stickersend23@2x.png in Resources */,
+				868013621F209F45000A2302 /* stickerlocal72@2x.png in Resources */,
+				868013631F209F45000A2302 /* stickerlocal07@2x.png in Resources */,
+				868013641F209F45000A2302 /* people_blank@2x.png in Resources */,
+				868013651F209F45000A2302 /* SelectSingleView.xib in Resources */,
+				868013661F209F45000A2302 /* stickersend44@2x.png in Resources */,
+				868013671F209F45000A2302 /* stickersend52@2x.png in Resources */,
+				868013681F209F45000A2302 /* StickersCell.xib in Resources */,
+				868013691F209F45000A2302 /* SelectMemberCell.xib in Resources */,
+				8680136A1F209F45000A2302 /* stickersend48@2x.png in Resources */,
+				8680136B1F209F45000A2302 /* selectmember_blank@2x.png in Resources */,
+				8680136C1F209F45000A2302 /* wallpapers07@2x.jpg in Resources */,
+				8680136D1F209F45000A2302 /* BlockedView.xib in Resources */,
+				8680136E1F209F45000A2302 /* archive_blank@2x.png in Resources */,
+				8680136F1F209F45000A2302 /* LoginGoogleView.xib in Resources */,
+				868013701F209F45000A2302 /* stickerlocal22@2x.png in Resources */,
+				868013711F209F45000A2302 /* tab_people@2x.png in Resources */,
+				868013721F209F45000A2302 /* CustomStatusView.xib in Resources */,
+				868013731F209F45000A2302 /* stickersend70@2x.png in Resources */,
+				868013741F209F45000A2302 /* stickerlocal15@2x.png in Resources */,
+				868013751F209F45000A2302 /* stickerlocal70@2x.png in Resources */,
+				868013761F209F45000A2302 /* stickersend61@2x.png in Resources */,
+				868013771F209F45000A2302 /* editprofile_blank@2x.png in Resources */,
+				868013781F209F45000A2302 /* stickersend69@2x.png in Resources */,
+				868013791F209F45000A2302 /* stickerlocal50@2x.png in Resources */,
+				8680137A1F209F45000A2302 /* stickerlocal47@2x.png in Resources */,
+				8680137B1F209F45000A2302 /* countries.plist in Resources */,
+				8680137C1F209F45000A2302 /* advert09@2x.png in Resources */,
+				8680137D1F209F45000A2302 /* callvideo_switch2@2x.png in Resources */,
+				8680137E1F209F45000A2302 /* stickersend22@2x.png in Resources */,
+				8680137F1F209F45000A2302 /* advert07@2x.png in Resources */,
+				868013801F209F45000A2302 /* callaudio_video2@2x.png in Resources */,
+				868013811F209F45000A2302 /* stickerlocal41@2x.png in Resources */,
+				868013821F209F45000A2302 /* stickerlocal43@2x.png in Resources */,
+				868013831F209F45000A2302 /* call_ringback.wav in Resources */,
+				868013841F209F45000A2302 /* WallpapersCell.xib in Resources */,
+				868013851F209F45000A2302 /* stickersend19@2x.png in Resources */,
+				868013861F209F45000A2302 /* stickerlocal55@2x.png in Resources */,
+				868013871F209F45000A2302 /* groups_blank@2x.png in Resources */,
+				868013881F209F45000A2302 /* stickersend04@2x.png in Resources */,
+				868013891F209F45000A2302 /* selectmultiple_blank@2x.png in Resources */,
+				8680138A1F209F45000A2302 /* group_more@2x.png in Resources */,
+				8680138B1F209F45000A2302 /* call_incoming.wav in Resources */,
+				8680138C1F209F45000A2302 /* advert03@2x.png in Resources */,
+				8680138D1F209F45000A2302 /* ArchiveView.xib in Resources */,
+				8680138E1F209F45000A2302 /* stickerlocal71@2x.png in Resources */,
+				8680138F1F209F45000A2302 /* stickerlocal18@2x.png in Resources */,
+				868013901F209F45000A2302 /* chat_callvideo@2x.png in Resources */,
+				868013911F209F45000A2302 /* stickersend63@2x.png in Resources */,
+				868013921F209F45000A2302 /* CreateGroupView.xib in Resources */,
+				868013931F209F45000A2302 /* callaudio_speaker1@2x.png in Resources */,
+				868013941F209F45000A2302 /* stickerlocal76@2x.png in Resources */,
+				868013951F209F45000A2302 /* stickerlocal10@2x.png in Resources */,
+				868013961F209F45000A2302 /* stickerlocal19@2x.png in Resources */,
+				868013971F209F45000A2302 /* stickersend36@2x.png in Resources */,
+				868013981F209F45000A2302 /* profile_callaudio@2x.png in Resources */,
+				868013991F209F45000A2302 /* stickersend28@2x.png in Resources */,
+				8680139A1F209F45000A2302 /* advert11@2x.png in Resources */,
+				8680139B1F209F45000A2302 /* stickerlocal02@2x.png in Resources */,
+				8680139C1F209F45000A2302 /* stickers_blank@2x.png in Resources */,
+				8680139D1F209F45000A2302 /* stickerlocal39@2x.png in Resources */,
+				8680139E1F209F45000A2302 /* stickerlocal69@2x.png in Resources */,
+				8680139F1F209F45000A2302 /* stickersend60@2x.png in Resources */,
+				868013A11F209F45000A2302 /* stickerlocal45@2x.png in Resources */,
+				868013A21F209F45000A2302 /* stickersend33@2x.png in Resources */,
+				868013A31F209F45000A2302 /* stickerlocal49@2x.png in Resources */,
+				868013A41F209F45000A2302 /* ChatsView.xib in Resources */,
+				868013A51F209F45000A2302 /* callaudio_mute2@2x.png in Resources */,
+				868013A61F209F45000A2302 /* stickersend26@2x.png in Resources */,
+				868013A71F209F45000A2302 /* chat_picture@2x.png in Resources */,
+				868013A81F209F45000A2302 /* stickerlocal68@2x.png in Resources */,
+				868013A91F209F45000A2302 /* stickersend30@2x.png in Resources */,
+				868013AA1F209F45000A2302 /* stickerlocal61@2x.png in Resources */,
+				868013AB1F209F45000A2302 /* wallpapers09@2x.jpg in Resources */,
+				868013AC1F209F45000A2302 /* stickerlocal57@2x.png in Resources */,
+				868013AD1F209F45000A2302 /* wallpaper_selected@2x.png in Resources */,
+				868013AE1F209F45000A2302 /* GroupView.xib in Resources */,
+				868013AF1F209F45000A2302 /* callaudio_speaker2@2x.png in Resources */,
+				868013B01F209F45000A2302 /* stickersend42@2x.png in Resources */,
+				868013B11F209F45000A2302 /* settings_blank@2x.png in Resources */,
+				868013B21F209F45000A2302 /* stickerlocal01@2x.png in Resources */,
+				868013B31F209F45000A2302 /* SelectUsersView.xib in Resources */,
+				868013B41F209F45000A2302 /* stickerlocal20@2x.png in Resources */,
+				868013B51F209F45000A2302 /* chat_camera@2x.png in Resources */,
+				868013B61F209F45000A2302 /* KeepMediaView.xib in Resources */,
+				868013B71F209F45000A2302 /* stickerlocal21@2x.png in Resources */,
+				868013B81F209F45000A2302 /* stickerlocal32@2x.png in Resources */,
+				868013B91F209F45000A2302 /* chat_back@2x.png in Resources */,
+				868013BA1F209F45000A2302 /* PeopleCell.xib in Resources */,
+				868013BB1F209F45000A2302 /* stickerlocal30@2x.png in Resources */,
+				868013BC1F209F45000A2302 /* stickersend55@2x.png in Resources */,
+				868013BD1F209F45000A2302 /* callaudio_mute1@2x.png in Resources */,
+				868013BE1F209F45000A2302 /* stickerlocal27@2x.png in Resources */,
+				868013BF1F209F45000A2302 /* stickersend43@2x.png in Resources */,
+				868013C01F209F45000A2302 /* StickersView.xib in Resources */,
+				868013C11F209F45000A2302 /* stickerlocal13@2x.png in Resources */,
+				868013C21F209F45000A2302 /* stickersend06@2x.png in Resources */,
+				868013C31F209F45000A2302 /* GroupsView.xib in Resources */,
+				868013C41F209F45000A2302 /* stickersend29@2x.png in Resources */,
+				868013C51F209F45000A2302 /* AllMediaCell.xib in Resources */,
+				868013C61F209F45000A2302 /* addaccount_logo@2x.png in Resources */,
+				868013C71F209F45000A2302 /* stickerlocal38@2x.png in Resources */,
+				868013C81F209F45000A2302 /* wallpapers08@2x.jpg in Resources */,
+				868013C91F209F45000A2302 /* stickerlocal75@2x.png in Resources */,
+				868013CA1F209F45000A2302 /* callvideo_mute2@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -2949,6 +3754,77 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" d46b6fabbab5de43e806b6135953c76d49415cd3 9dc2bb7f83c79e26bbd06d102cf834677eb71e35b67007ca3c1b31805986f143";
 		};
+		868012131F209F45000A2302 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		868013CB1F209F45000A2302 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run ac9438edebdb95df461c7262fceee49c69cba5e6 12f7e76d3300cda38a43685d341e69d23e943d04e4923c0ba23c5258d2c3fa0e";
+		};
+		868013CC1F209F45000A2302 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-app/Pods-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		868013CD1F209F45000A2302 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-app/Pods-app-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		868013D31F219C36000A2302 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
 		91641E363E2F060525A0B842 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2961,7 +3837,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D567568908D0AD09C42C82CE /* [CP] Embed Pods Frameworks */ = {
@@ -3036,6 +3912,7 @@
 				2989925B1F1B700300AC73B3 /* CallHistory.m in Sources */,
 				298992861F1B700300AC73B3 /* DBUser.m in Sources */,
 				2989920E1F1B700300AC73B3 /* StickersView.m in Sources */,
+				868013EA1F272B64000A2302 /* AppConstant.m in Sources */,
 				2989924D1F1B700300AC73B3 /* FObject.m in Sources */,
 				298992571F1B700300AC73B3 /* Users.m in Sources */,
 				298992881F1B700300AC73B3 /* LoginEmailView.m in Sources */,
@@ -3134,6 +4011,147 @@
 				298992061F1B700300AC73B3 /* SelectUsersCell1.m in Sources */,
 				2989925E1F1B700300AC73B3 /* Message.m in Sources */,
 				291593E61E55E75400CC0E12 /* SINSServicePersistence.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		868012141F209F45000A2302 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				868012151F209F45000A2302 /* NSDate+Util.m in Sources */,
+				868012161F209F45000A2302 /* AdvertPremiumView.m in Sources */,
+				868012171F209F45000A2302 /* ChatsView.m in Sources */,
+				868012181F209F45000A2302 /* Shortcut.m in Sources */,
+				868012191F209F45000A2302 /* CallsView.m in Sources */,
+				8680121A1F209F45000A2302 /* SINSLazyAudioController.m in Sources */,
+				8680121B1F209F45000A2302 /* advert.m in Sources */,
+				8680121C1F209F45000A2302 /* CallHistories.m in Sources */,
+				8680121D1F209F45000A2302 /* SINSLazyMessageClient.m in Sources */,
+				8680121E1F209F45000A2302 /* RegisterEmailView.m in Sources */,
+				8680121F1F209F45000A2302 /* NSDictionary+Util.m in Sources */,
+				868012201F209F45000A2302 /* DBContact.m in Sources */,
+				868012211F209F45000A2302 /* GroupView.m in Sources */,
+				868012221F209F45000A2302 /* File.m in Sources */,
+				868012231F209F45000A2302 /* Group.m in Sources */,
+				868012241F209F45000A2302 /* StatusView.m in Sources */,
+				868012251F209F45000A2302 /* DBMessage.m in Sources */,
+				868012261F209F45000A2302 /* ChatView.m in Sources */,
+				868012271F209F45000A2302 /* ProfileView.m in Sources */,
+				868012281F209F45000A2302 /* Statuses.m in Sources */,
+				868012291F209F45000A2302 /* Cryptor.m in Sources */,
+				8680122A1F209F45000A2302 /* GroupsView.m in Sources */,
+				8680122B1F209F45000A2302 /* SelectMultipleView.m in Sources */,
+				8680122C1F209F45000A2302 /* MediaView.m in Sources */,
+				8680122D1F209F45000A2302 /* FUser+Util.m in Sources */,
+				8680122E1F209F45000A2302 /* LoginPhoneView.m in Sources */,
+				8680122F1F209F45000A2302 /* SINSLazyProxyBase.m in Sources */,
+				868012301F209F45000A2302 /* ArchiveView.m in Sources */,
+				868012311F209F45000A2302 /* Emoji.m in Sources */,
+				868012321F209F45000A2302 /* SelectSingleView.m in Sources */,
+				868012331F209F45000A2302 /* Blocked.m in Sources */,
+				868013E81F272B49000A2302 /* AppConstant_dev.m in Sources */,
+				868012341F209F45000A2302 /* AlbumManager.m in Sources */,
+				868012351F209F45000A2302 /* CallHistory.m in Sources */,
+				868012361F209F45000A2302 /* DBUser.m in Sources */,
+				868012371F209F45000A2302 /* StickersView.m in Sources */,
+				868012381F209F45000A2302 /* FObject.m in Sources */,
+				868012391F209F45000A2302 /* Users.m in Sources */,
+				8680123A1F209F45000A2302 /* LoginEmailView.m in Sources */,
+				8680123B1F209F45000A2302 /* AllMediaView.m in Sources */,
+				8680123C1F209F45000A2302 /* KeepMediaView.m in Sources */,
+				8680123D1F209F45000A2302 /* DBChat.m in Sources */,
+				8680123E1F209F45000A2302 /* DBCallHistory.m in Sources */,
+				8680123F1F209F45000A2302 /* Groups.m in Sources */,
+				868012401F209F45000A2302 /* SwitchAccountCell.m in Sources */,
+				868012411F209F45000A2302 /* CustomStatusView.m in Sources */,
+				868012421F209F45000A2302 /* PeopleCell.m in Sources */,
+				868012431F209F45000A2302 /* WelcomeView.m in Sources */,
+				868012441F209F45000A2302 /* DBStatus.m in Sources */,
+				868012451F209F45000A2302 /* WallpapersView.m in Sources */,
+				868012461F209F45000A2302 /* BlockedCell.m in Sources */,
+				868012471F209F45000A2302 /* MessageSend1.m in Sources */,
+				868012481F209F45000A2302 /* MapView.m in Sources */,
+				868012491F209F45000A2302 /* EditProfileView.m in Sources */,
+				8680124A1F209F45000A2302 /* MessagesView.m in Sources */,
+				8680124B1F209F45000A2302 /* PasswordView.m in Sources */,
+				8680124C1F209F45000A2302 /* Status.m in Sources */,
+				8680124D1F209F45000A2302 /* NSError+Util.m in Sources */,
+				8680124E1F209F45000A2302 /* SinchService.m in Sources */,
+				8680124F1F209F45000A2302 /* SelectGroupView.m in Sources */,
+				868012501F209F45000A2302 /* Connection.m in Sources */,
+				868012511F209F45000A2302 /* SINSLazyCallClient.m in Sources */,
+				868012521F209F45000A2302 /* SINService.m in Sources */,
+				868012531F209F45000A2302 /* Audio.m in Sources */,
+				868012541F209F45000A2302 /* CacheManager.m in Sources */,
+				868012551F209F45000A2302 /* SINSClientsObserver.m in Sources */,
+				868012561F209F45000A2302 /* SelectGroupCell.m in Sources */,
+				868012571F209F45000A2302 /* MessageSend2.m in Sources */,
+				868012581F209F45000A2302 /* AllMediaCell.m in Sources */,
+				868012591F209F45000A2302 /* push.m in Sources */,
+				8680125A1F209F45000A2302 /* AppDelegate.m in Sources */,
+				8680125B1F209F45000A2302 /* SwitchAccountView.m in Sources */,
+				8680125C1F209F45000A2302 /* NavigationController.m in Sources */,
+				8680125D1F209F45000A2302 /* AddAccountView.m in Sources */,
+				8680125E1F209F45000A2302 /* Blockeds.m in Sources */,
+				8680125F1F209F45000A2302 /* UserStatuses.m in Sources */,
+				868012601F209F45000A2302 /* GroupsCell.m in Sources */,
+				868012611F209F45000A2302 /* FUser.m in Sources */,
+				868012621F209F45000A2302 /* DBGroup.m in Sources */,
+				868012631F209F45000A2302 /* StickersCell.m in Sources */,
+				868012641F209F45000A2302 /* main.m in Sources */,
+				868012651F209F45000A2302 /* ChatsCell.m in Sources */,
+				868012661F209F45000A2302 /* ArchiveCell.m in Sources */,
+				868012671F209F45000A2302 /* UserDefaults.m in Sources */,
+				868012681F209F45000A2302 /* NYTPhotoItem.m in Sources */,
+				868012691F209F45000A2302 /* VideoView.m in Sources */,
+				8680126A1F209F45000A2302 /* SelectMemberCell.m in Sources */,
+				8680126B1F209F45000A2302 /* SINServiceError.m in Sources */,
+				8680126C1F209F45000A2302 /* Image.m in Sources */,
+				8680126D1F209F45000A2302 /* CallVideoView.m in Sources */,
+				8680126E1F209F45000A2302 /* VerifySMSView.m in Sources */,
+				8680126F1F209F45000A2302 /* DBUserStatus.m in Sources */,
+				868012701F209F45000A2302 /* CreateGroupView.m in Sources */,
+				868012711F209F45000A2302 /* Dir.m in Sources */,
+				868012721F209F45000A2302 /* AdvertCustomView.m in Sources */,
+				868012731F209F45000A2302 /* PeopleView.m in Sources */,
+				868012741F209F45000A2302 /* WallpapersCell.m in Sources */,
+				868012751F209F45000A2302 /* NotificationCenter.m in Sources */,
+				868012761F209F45000A2302 /* SelectUsersCell2.m in Sources */,
+				868012771F209F45000A2302 /* converter.m in Sources */,
+				868012781F209F45000A2302 /* CallAudioView.m in Sources */,
+				868012791F209F45000A2302 /* PictureView.m in Sources */,
+				8680127A1F209F45000A2302 /* MessageForward.m in Sources */,
+				8680127B1F209F45000A2302 /* NetworkView.m in Sources */,
+				8680127C1F209F45000A2302 /* Password.m in Sources */,
+				8680127D1F209F45000A2302 /* camera.m in Sources */,
+				8680127E1F209F45000A2302 /* SelectMemberView.m in Sources */,
+				8680127F1F209F45000A2302 /* LoginGoogleView.m in Sources */,
+				868012801F209F45000A2302 /* BlockedView.m in Sources */,
+				868012811F209F45000A2302 /* Account.m in Sources */,
+				868012821F209F45000A2302 /* PrivacyView.m in Sources */,
+				868012831F209F45000A2302 /* Contacts.m in Sources */,
+				868012841F209F45000A2302 /* SelectMultipleCell.m in Sources */,
+				868012851F209F45000A2302 /* Messages.m in Sources */,
+				868012861F209F45000A2302 /* Location.m in Sources */,
+				868012871F209F45000A2302 /* SelectUsersView.m in Sources */,
+				868012881F209F45000A2302 /* Chat.m in Sources */,
+				868012891F209F45000A2302 /* Video.m in Sources */,
+				8680128A1F209F45000A2302 /* Checksum.m in Sources */,
+				8680128B1F209F45000A2302 /* TermsView.m in Sources */,
+				8680128C1F209F45000A2302 /* CacheView.m in Sources */,
+				8680128D1F209F45000A2302 /* SettingsView.m in Sources */,
+				8680128E1F209F45000A2302 /* MessageQueue.m in Sources */,
+				8680128F1F209F45000A2302 /* user.m in Sources */,
+				868012901F209F45000A2302 /* MediaLoader.m in Sources */,
+				868012911F209F45000A2302 /* SelectSingleCell.m in Sources */,
+				868012921F209F45000A2302 /* CountriesView.m in Sources */,
+				868012931F209F45000A2302 /* DownloadManager.m in Sources */,
+				868012941F209F45000A2302 /* RealmManager.m in Sources */,
+				868012951F209F45000A2302 /* common.m in Sources */,
+				868012961F209F45000A2302 /* DBBlocked.m in Sources */,
+				868012971F209F45000A2302 /* SelectUsersCell1.m in Sources */,
+				868012981F209F45000A2302 /* Message.m in Sources */,
+				868012991F209F45000A2302 /* SINSServicePersistence.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3249,11 +4267,11 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_ENTITLEMENTS = app/app.entitlements;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = UUF85U8HLF;
+				DEVELOPMENT_TEAM = ATSE3MDB5Y;
 				INFOPLIST_FILE = app/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.relatedcode.chat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.recomot.chat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -3265,11 +4283,44 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_ENTITLEMENTS = app/app.entitlements;
-				DEVELOPMENT_TEAM = UUF85U8HLF;
+				DEVELOPMENT_TEAM = ATSE3MDB5Y;
 				INFOPLIST_FILE = app/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.relatedcode.chat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.recomot.chat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		868013CF1F209F45000A2302 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC28F63C1114893726170446 /* Pods-app.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_ENTITLEMENTS = app/app.entitlements;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 58V87X55PH;
+				INFOPLIST_FILE = "app copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.recomot.chat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		868013D01F209F45000A2302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7393A6F3A4D6270AF7ACDCFA /* Pods-app.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_ENTITLEMENTS = app/app.entitlements;
+				DEVELOPMENT_TEAM = 58V87X55PH;
+				INFOPLIST_FILE = "app copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.recomot.chat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -3291,6 +4342,15 @@
 			buildConfigurations = (
 				29D29F091D9A59E4006CA074 /* Debug */,
 				29D29F0A1D9A59E4006CA074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		868013CE1F209F45000A2302 /* Build configuration list for PBXNativeTarget "Messenger_dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				868013CF1F209F45000A2302 /* Debug */,
+				868013D01F209F45000A2302 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
