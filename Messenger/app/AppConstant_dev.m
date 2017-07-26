@@ -9,6 +9,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+#import <Foundation/Foundation.h>
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 #define		HEXCOLOR(c) [UIColor colorWithRed:((c>>24)&0xFF)/255.0 green:((c>>16)&0xFF)/255.0 blue:((c>>8)&0xFF)/255.0 alpha:((c)&0xFF)/255.0]
 //-------------------------------------------------------------------------------------------------------------------------------------------------
@@ -21,67 +22,109 @@
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------
-#define		FIREBASE_STORAGE					@"gs://related31-21f6e.appspot.com"
+//#define		FIREBASE_STORAGE   @"gs://related31-21f6e.appspot.com"
+NSString * const FIREBASE_STORAGE = @"gs://messengerdev-ae909.appspot.com";
 //-------------------------------------------------------------------------------------------------------------------------------------------------
-#define		ONESIGNAL_APPID						@"15cad58e-b84c-47e1-a29b-932e88457132"
+// https://onesignal.com/  push notification service will need push APNS files
+//#define		ONESIGNAL_APPID	  @"15cad58e-b84c-47e1-a29b-932e88457132"
+NSString * const ONESIGNAL_APPID = @"15cad58e-b84c-47e1-a29b-932e88457132";
 //-------------------------------------------------------------------------------------------------------------------------------------------------
-#define		SINCH_HOST							@"sandbox.sinch.com"
-#define		SINCH_KEY							@"b515eb8b-dcaf-473d-982a-81c5a97a3a1e"
-#define		SINCH_SECRET						@"mgnwHKZLIkahFoj90UsbCg=="
+//#define		SINCH_HOST			@"sandbox.sinch.com"
+//#define		SINCH_KEY			@"b515eb8b-dcaf-473d-982a-81c5a97a3a1e"
+//#define		SINCH_SECRET		@"mgnwHKZLIkahFoj90UsbCg=="
+NSString * const SINCH_HOST		= @"sandbox.sinch.com";
+NSString * const SINCH_KEY		= @"b515eb8b-dcaf-473d-982a-81c5a97a3a1e";
+NSString * const SINCH_SECRET	= @"mgnwHKZLIkahFoj90UsbCg==";
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------
-#define		PHONE_LOGIN_DOMAIN					@"yourdomain.com"
-#define		PHONE_LOGIN_PASSWORD				@"Q0wD3gtRv73Olz6E8g8G"
+//#define		PHONE_LOGIN_DOMAIN		@"yourdomain.com"
+//#define		PHONE_LOGIN_PASSWORD	@"Q0wD3gtRv73Olz6E8g8G"
+NSString * const PHONE_LOGIN_DOMAIN		= @"yourdomain.com";
+NSString * const PHONE_LOGIN_PASSWORD	= @"Q0wD3gtRv73Olz6E8g8G";
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 #define		VERSION_CUSTOM
 #define		VERSION_PREMIUM
 //---------------------------------------------------------------------------------
-#define		DEFAULT_TAB							0
-#define		DEFAULT_COUNTRY						84
+//#define		DEFAULT_TAB							0
+//#define		DEFAULT_COUNTRY						84
+int const DEFAULT_TAB                   =       0;
+int const DEFAULT_COUNTRY				=		84;
 //---------------------------------------------------------------------------------
-#define		VIDEO_LENGTH						5
-#define		AUDIO_LENGTH						5
-#define		INSERT_MESSAGES						10
-#define		DOWNLOAD_TIMEOUT					300
+//#define		VIDEO_LENGTH						5
+//#define		AUDIO_LENGTH						5
+//#define		INSERT_MESSAGES						10
+//#define		DOWNLOAD_TIMEOUT					300
+int const VIDEO_LENGTH                  =		5;
+int const AUDIO_LENGTH					=       5;
+int const INSERT_MESSAGES				=		10;
+int const DOWNLOAD_TIMEOUT				=       300;
 //---------------------------------------------------------------------------------
-#define		STATUS_LOADING						1
-#define		STATUS_SUCCEED						2
-#define		STATUS_MANUAL						3
+//#define		STATUS_LOADING						1
+//#define		STATUS_SUCCEED						2
+//#define		STATUS_MANUAL						3
+int const STATUS_LOADING				=		1;
+int const STATUS_SUCCEED				=		2;
+int const STATUS_MANUAL					=       3;
 //---------------------------------------------------------------------------------
-#define		MEDIA_IMAGE							1
-#define		MEDIA_VIDEO							2
-#define		MEDIA_AUDIO							3
+//#define		MEDIA_IMAGE							1
+//#define		MEDIA_VIDEO							2
+//#define		MEDIA_AUDIO							3
+int const MEDIA_IMAGE					=		1;
+int const MEDIA_VIDEO					=		2;
+int const MEDIA_AUDIO					=		3;
 //---------------------------------------------------------------------------------
-#define		NETWORK_MANUAL						1
-#define		NETWORK_WIFI						2
-#define		NETWORK_ALL							3
+//#define		NETWORK_MANUAL						1
+//#define		NETWORK_WIFI						2
+//#define		NETWORK_ALL							3
+int const NETWORK_MANUAL				=		1;
+int const NETWORK_WIFI					=       2;
+int const NETWORK_ALL					=		3;
 //---------------------------------------------------------------------------------
-#define		KEEPMEDIA_WEEK						1
-#define		KEEPMEDIA_MONTH						2
-#define		KEEPMEDIA_FOREVER					3
+//#define		KEEPMEDIA_WEEK						1
+//#define		KEEPMEDIA_MONTH						2
+//#define		KEEPMEDIA_FOREVER					3
+int const KEEPMEDIA_WEEK				=		1;
+int const KEEPMEDIA_MONTH				=		2;
+int const KEEPMEDIA_FOREVER				=       3;
 //---------------------------------------------------------------------------------
-#define		DEL_ACCOUNT_NONE					1
-#define		DEL_ACCOUNT_ONE						2
-#define		DEL_ACCOUNT_ALL						3
+//#define		DEL_ACCOUNT_NONE					1
+//#define		DEL_ACCOUNT_ONE						2
+//#define		DEL_ACCOUNT_ALL						3
+int const DEL_ACCOUNT_NONE				=       1;
+int const DEL_ACCOUNT_ONE				=		2;
+int const DEL_ACCOUNT_ALL				=		3;
 //---------------------------------------------------------------------------------
-#define		CALLHISTORY_AUDIO					@"audio"
-#define		CALLHISTORY_VIDEO					@"video"
+//#define		CALLHISTORY_AUDIO					@"audio"
+//#define		CALLHISTORY_VIDEO					@"video"
+NSString * const CALLHISTORY_AUDIO	=				@"audio";
+NSString * const CALLHISTORY_VIDEO	=				@"video";
 //---------------------------------------------------------------------------------
-#define		MESSAGE_STATUS						@"status"
-#define		MESSAGE_TEXT						@"text"
-#define		MESSAGE_EMOJI						@"emoji"
-#define		MESSAGE_PICTURE						@"picture"
-#define		MESSAGE_VIDEO						@"video"
-#define		MESSAGE_AUDIO						@"audio"
-#define		MESSAGE_LOCATION					@"location"
+//#define		MESSAGE_STATUS						@"status"
+//#define		MESSAGE_TEXT						@"text"
+//#define		MESSAGE_EMOJI						@"emoji"
+//#define		MESSAGE_PICTURE						@"picture"
+//#define		MESSAGE_VIDEO						@"video"
+//#define		MESSAGE_AUDIO						@"audio"
+//#define		MESSAGE_LOCATION					@"location"
+NSString * const MESSAGE_STATUS		=				@"status";
+NSString * const MESSAGE_TEXT		=				@"text";
+NSString * const MESSAGE_EMOJI		=				@"emoji";
+NSString * const MESSAGE_PICTURE	=				@"picture";
+NSString * const MESSAGE_VIDEO		=				@"video";
+NSString * const MESSAGE_AUDIO		=				@"audio";
+NSString * const MESSAGE_LOCATION	=				@"location";
 //---------------------------------------------------------------------------------
-#define		LOGIN_EMAIL							@"Email"
-#define		LOGIN_FACEBOOK						@"Facebook"
-#define		LOGIN_GOOGLE						@"Google"
-#define		LOGIN_PHONE							@"Phone"
+//#define		LOGIN_EMAIL							@"Email"
+//#define		LOGIN_FACEBOOK						@"Facebook"
+//#define		LOGIN_GOOGLE						@"Google"
+//#define		LOGIN_PHONE							@"Phone"
+NSString * const LOGIN_EMAIL	=					@"Email";
+NSString * const LOGIN_FACEBOOK	=					@"Facebook";
+NSString * const LOGIN_GOOGLE	=					@"Google";
+NSString * const LOGIN_PHONE	=					@"Phone";
 //---------------------------------------------------------------------------------
 #define		COLOR_OUTGOING						HEXCOLOR(0x007AFFFF)
 #define		COLOR_INCOMING						HEXCOLOR(0xE6E5EAFF)
@@ -89,13 +132,19 @@
 #define		COLOR_NAVIGATION_TEXT				[UIColor whiteColor]
 #define		COLOR_NAVIGATION_BACKGROUND			HEXCOLOR(0x7FBB00FF)
 //---------------------------------------------------------------------------------
-#define		TEXT_QUEUED							@"Queued"
-#define		TEXT_SENT							@"Sent"
-#define		TEXT_READ							@"Read"
+//#define		TEXT_QUEUED							@"Queued"
+//#define		TEXT_SENT							@"Sent"
+//#define		TEXT_READ							@"Read"
+NSString * const TEXT_QUEUED	=					@"Queued";
+NSString * const TEXT_SENT		=					@"Sent";
+NSString * const TEXT_READ		=					@"Read";
 //---------------------------------------------------------------------------------
-#define		PHOTOS_ALBUM_TITLE					@"Chat"
+//#define		PHOTOS_ALBUM_TITLE					@"Chat"
+NSString * const PHOTOS_ALBUM_TITLE	=				@"Chat";
 //---------------------------------------------------------------------------------
-#define		LINK_PREMIUM						@"http://www.relatedcode.com/premium"
+//#define		LINK_PREMIUM			@"http://www.relatedcode.com/premium"
+NSString * const LINK_PREMIUM	=	@"http://www.relatedcode.com/premium";
+
 //---------------------------------------------------------------------------------
 #define		SCREEN_WIDTH						[UIScreen mainScreen].bounds.size.width
 #define		SCREEN_HEIGHT						[UIScreen mainScreen].bounds.size.height

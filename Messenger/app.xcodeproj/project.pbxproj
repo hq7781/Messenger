@@ -443,6 +443,7 @@
 		29D29EF91D9A59E4006CA074 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D29EF81D9A59E4006CA074 /* AppDelegate.m */; };
 		29D29F011D9A59E4006CA074 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29D29F001D9A59E4006CA074 /* Assets.xcassets */; };
 		29D29F041D9A59E4006CA074 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29D29F021D9A59E4006CA074 /* LaunchScreen.storyboard */; };
+		861232BE1F2870AB00F0615B /* GoogleService-Info_dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = 861232BC1F2870A000F0615B /* GoogleService-Info_dev.plist */; };
 		868012151F209F45000A2302 /* NSDate+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991771F1B700200AC73B3 /* NSDate+Util.m */; };
 		868012161F209F45000A2302 /* AdvertPremiumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298991431F1B700200AC73B3 /* AdvertPremiumView.m */; };
 		868012171F209F45000A2302 /* ChatsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298990D71F1B700200AC73B3 /* ChatsView.m */; };
@@ -878,7 +879,6 @@
 		868013C81F209F45000A2302 /* wallpapers08@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29898F7D1F1B6FFD00AC73B3 /* wallpapers08@2x.jpg */; };
 		868013C91F209F45000A2302 /* stickerlocal75@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898F221F1B6FFC00AC73B3 /* stickerlocal75@2x.png */; };
 		868013CA1F209F45000A2302 /* callvideo_mute2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29898E921F1B6FFC00AC73B3 /* callvideo_mute2@2x.png */; };
-		868013E51F2725CA000A2302 /* GoogleService-Info_dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = 868013E31F27259C000A2302 /* GoogleService-Info_dev.plist */; };
 		868013E81F272B49000A2302 /* AppConstant_dev.m in Sources */ = {isa = PBXBuildFile; fileRef = 868013E71F272A47000A2302 /* AppConstant_dev.m */; };
 		868013EA1F272B64000A2302 /* AppConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 868013E91F272B64000A2302 /* AppConstant.m */; };
 		868013EB1F272B94000A2302 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29D29F051D9A59E4006CA074 /* Info.plist */; };
@@ -1484,9 +1484,9 @@
 		29D29F031D9A59E4006CA074 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29D29F051D9A59E4006CA074 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7393A6F3A4D6270AF7ACDCFA /* Pods-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-app/Pods-app.release.xcconfig"; sourceTree = "<group>"; };
+		861232BC1F2870A000F0615B /* GoogleService-Info_dev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info_dev.plist"; sourceTree = "<group>"; };
 		868013D11F209F46000A2302 /* Messenger_dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messenger_dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		868013D21F209F5B000A2302 /* app copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "app copy-Info.plist"; path = "/Users/recomot/Documents/kou/Messenger/Messenger/app copy-Info.plist"; sourceTree = "<absolute>"; };
-		868013E31F27259C000A2302 /* GoogleService-Info_dev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info_dev.plist"; sourceTree = "<group>"; };
 		868013E71F272A47000A2302 /* AppConstant_dev.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConstant_dev.m; sourceTree = "<group>"; };
 		868013E91F272B64000A2302 /* AppConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConstant.m; sourceTree = "<group>"; };
 		868013EC1F272BBA000A2302 /* Info_dev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_dev.plist; sourceTree = "<group>"; };
@@ -3008,9 +3008,9 @@
 		868013E61F27263A000A2302 /* dev */ = {
 			isa = PBXGroup;
 			children = (
+				861232BC1F2870A000F0615B /* GoogleService-Info_dev.plist */,
 				868013EC1F272BBA000A2302 /* Info_dev.plist */,
 				868013E71F272A47000A2302 /* AppConstant_dev.m */,
-				868013E31F27259C000A2302 /* GoogleService-Info_dev.plist */,
 			);
 			name = dev;
 			sourceTree = "<group>";
@@ -3488,7 +3488,7 @@
 				868012D21F209F45000A2302 /* VerifySMSView.xib in Resources */,
 				868012D31F209F45000A2302 /* stickerlocal33@2x.png in Resources */,
 				868012D41F209F45000A2302 /* Assets.xcassets in Resources */,
-				868013E51F2725CA000A2302 /* GoogleService-Info_dev.plist in Resources */,
+				861232BE1F2870AB00F0615B /* GoogleService-Info_dev.plist in Resources */,
 				868012D51F209F45000A2302 /* wallpapers03@2x.jpg in Resources */,
 				868012D61F209F45000A2302 /* stickerlocal25@2x.png in Resources */,
 				868012D71F209F45000A2302 /* stickersend66@2x.png in Resources */,
@@ -4271,7 +4271,7 @@
 				INFOPLIST_FILE = app/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.recomot.chat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.enixsoft.chat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -4287,7 +4287,7 @@
 				INFOPLIST_FILE = app/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.recomot.chat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.enixsoft.chat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -4304,7 +4304,7 @@
 				INFOPLIST_FILE = "app copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.recomot.chat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.enixsoft.messenger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -4320,7 +4320,7 @@
 				INFOPLIST_FILE = "app copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.recomot.chat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.enixsoft.messenger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
