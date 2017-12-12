@@ -1,4 +1,4 @@
-[![I am available for hire](http://relatedcode.com/github/header13.png)](http://relatedcode.com)
+[![iOS Messenger](http://relatedcode.com/github/header13.png)](http://github.com/relatedcode/Messenger)
 
 ## OVERVIEW
 
